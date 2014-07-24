@@ -1,10 +1,9 @@
 body
-	padding-top 20px
+	padding-top 0
 	padding-bottom 20px
 	color #000
-	font-family cuprum, sans-serif
-	background-color #f0f0f0
-	background-image url(../images/chruch.png)
+	font-family HelveticaNeue, sans-serif
+	background-color #fff
 	cursor default
 
 	@media screen and (max-width: 540px)
@@ -14,42 +13,51 @@ body
 .main
 	margin-left auto
 	margin-right auto
-	padding 20px
-	max-width 540px
+	padding 0
+	max-width 100%
+	min-width 1000px
 	font-size 16px
 	border-radius 4px
 	background-color #fff
-	box-shadow 0 0 8px rgba(0, 0, 0, .5)
 
 	&::selection
 		background-color #ffffd0
 
 	@media screen and (max-width: 540px)
-		padding-top 40px
-		padding-bottom 40px
 		border-radius 0
 		box-shadow none
 
+.wrapper--1000
+	width 1000px
+	margin 0 auto
+
+.wrapper--oveflow-hidden
+	overflow hidden
+	
 .logo
-	height 180px
-	background url(../images/logo.jpg) 50% -20px no-repeat
-	margin-left -20px
-	margin-right -20px
+	width 215px
+	height 99px
+	margin-left 0
+	margin-top 20px
+	margin-bottom 15px
+	background url(../images/logo.png) 0 0 no-repeat
 
 .h1
 	margin-left -20px
 	margin-right -20px
 	margin-bottom 20px
-	padding 20px
-	font-size 28px
+	padding-top: 54px;
+	font-family HelveticaNeueLTBold, sans-sefif
+	font-size 185px
+	line-height: 158px;
 	font-weight bold
-	text-align center
+	text-align left
 
 .h2
 	margin-bottom 20px
-	font-size 20px
+	font-size 54px
 	font-weight bold
-	text-align center
+	line-height 60px
 
 .h3
 	margin-bottom 10px
@@ -75,3 +83,46 @@ body
 
 	&::selection
 		background-color rgba(0, 0, 0, .1)
+
+.image_block
+	position relative
+	overflow hidden
+	margin 0 auto
+	text-align center
+	min-width 1000px
+	max-width 1400px
+
+.image_block__image
+	position relative
+	margin-left -50%
+	margin-right -50%
+	vertical-align middle
+
+.image_block__title
+	position absolute
+	top 0px
+	color #fff
+	left 50%
+	margin-left -500px
+	width 1000px
+
+.gradient_block{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.gradient_block--pink
+	background-linear-gradient(left, #f07673, 0%, #ff83bb, 30%, #fd43a4, 100%)
+
+.gradient_block__title
+	color #fff
+
+.gradient_block__link
+	display block
+	padding-top 16px
+	padding-bottom 16px
+	font-family HelveticaNeueLTBold, sans-sefif
+	font-size 30px
+	line-height 30px
+	text-transform uppercase
+	color #fff
