@@ -10,6 +10,9 @@ body
 		padding-top 0
 		padding-bottom 0
 
+a
+	color #F128C1
+	
 .main
 	margin-left auto
 	margin-right auto
@@ -54,20 +57,21 @@ body
 	text-align left
 
 .h2
-	margin-bottom 20px
+	margin-bottom 16px
 	font-size 54px
 	font-weight bold
 	line-height 60px
 
 .h3
-	margin-bottom 10px
-	padding-left 20px
-	padding-right 20px
-	font-size 18px
-	font-weight bold
-
-	@media screen and (max-width: 540px)
-		text-align center
+	font-family HelveticaNeueLTBold, sans-sefif
+	font-size 30px
+	font-weight normal
+	line-height 44px
+	text-transform uppercase
+	text-align left
+	
+.h3--white
+	color #fff
 
 .description
 	margin-bottom 40px
@@ -84,6 +88,10 @@ body
 	&::selection
 		background-color rgba(0, 0, 0, .1)
 
+.block
+	padding-top 21px
+	padding-bottom 21px
+		
 .image_block
 	position relative
 	overflow hidden
@@ -106,23 +114,48 @@ body
 	margin-left -500px
 	width 1000px
 
-.gradient_block{
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
+.gradient_block
+	padding-top 40px
+	padding-bottom 35px
 
 .gradient_block--pink
 	background-linear-gradient(left, #f07673, 0%, #ff83bb, 30%, #fd43a4, 100%)
+	
+.gradient_block--green
+	padding-top: 47px;
+	padding-bottom: 49px;
+	background-linear-gradient(left, #00BEA3, 0%, #3CD52E, 30%, #FFF36E, 100%)
 
 .gradient_block__title
 	color #fff
 
-.gradient_block__link
+.wrapper--absolute
+	position absolute
+	top 0px
+	color #fff
+	left 50%
+	margin-left -500px
+	width 1000px
+	
+.wrapper--padding74
+	padding-top 68px
+	padding-bottom 74px
+		
+.wrapper--padding27
+	padding-top 27px
+	
+.block__link
 	display block
-	padding-top 16px
-	padding-bottom 16px
+	text-align left
 	font-family HelveticaNeueLTBold, sans-sefif
 	font-size 30px
-	line-height 30px
+	line-height 40px
 	text-transform uppercase
+	
+.block__link--white
 	color #fff
+
+.block__link--oneline
+	padding-top 16px
+	padding-bottom 16px
+
