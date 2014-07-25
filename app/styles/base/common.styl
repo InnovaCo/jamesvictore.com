@@ -105,7 +105,7 @@ a
 .block
 	padding-top 21px
 	padding-bottom 21px
-		
+
 .image_block
 	position relative
 	overflow hidden
@@ -185,22 +185,79 @@ a
 .block__link--oneline
 	padding-top 16px
 	padding-bottom 16px
+	
+.block__link--quotes
+	margin-top 45px
+	margin-bottom 12px
 
 .block__paragraph
-	width 750px
+	width 745px
 	float left
 	font-family Georgia, serif
 	font-size 26px
 	line-height 36px
+	
+.block__paragraph--wide
+	width 100%
+	float none
 
-p
+.block__paragraph__title
+	padding-top 8px
+	padding-bottom 10px
+	font-family HelveticaNeue, sans-serif
+	font-size 12px
+	line-height 18px
+	text-transform uppercase
+	
+.block__paragraph__quote--big
+	font-family HelveticaNeueLTBold, sans-serif
+	font-size 54px
+	line-height 60px
+	
+.block__paragraph__quote--small
+	font-family Georgia
+	font-style italic
+	font-size 26px
+	line-height 36px
+	margin-top 25px
+	
+.quote__author
+	font-family Georgia
+	font-size 18px
+	line-height 36px
+	
+.quote__author--big
+	margin-top 19px
+	margin-bottom 2px
+
+.quote__author--small
+	font-style normal
+	line-height 30px
+
+.text
 	margin-top 3px
 	margin-bottom 24px
+	
+
+.block__list
+	margin-bottom 24px
+
+.block__list__item:before
+	content "\2014"
+	position relative
+	margin-right 13px
+	
+.block__list__item
+	list-style-type none
+	line-height 35px
 	
 .block__events
 	float right
 	width 215px
 	margin-top 7px
+	
+.block__events--past
+	margin-top 30px
 
 .block__events__item
 	padding-top 9px
@@ -208,6 +265,14 @@ p
 	font-family HelveticaNeueLTBold, sans-serif
 	font-size 16px
 	line-height 20px
+	
+.block__events__item--past
+	padding-top 8px
+	padding-bottom 5px
+	font-family HelveticaNeueLTBold, sans-serif
+	font-size 18px
+	line-height 20px
+	color #000
 
 .block__events__item--disabled
 	text-decoration line-through
