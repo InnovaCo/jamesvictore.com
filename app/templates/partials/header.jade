@@ -1,11 +1,21 @@
 .header
 	.wrapper--1000.wrapper--oveflow-hidden
-		.logo
-		.menu
-			a.menu__button(href='javascript:void(0);') Menu
-			a.menu__button.menu__button--pink(href='javascript:void(0);')  Life
-			
+	
+		block header
+		if current === 'home'
+			.logo
+			.menu
+				a.menu__button(href='javascript:void(0);') Menu
+				a.menu__button.menu__button--pink(href='javascript:void(0);')  Life
+		
+		else
+			.logo--small
+			.menu
+				a.menu__button(href='javascript:void(0);') Menu
+				a.menu__button.menu__button--green(href='javascript:void(0);')  Life
+				
 		.contacts
 			a.contacts__link(href='javascript:void(0);') Subscribe
 			a.contacts__link(href='javascript:void(0);') Contact
 			a.contacts__link(href='javascript:void(0);') TW / FB / IG
+
