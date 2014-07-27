@@ -236,7 +236,7 @@ a {
 	margin-left: -20px;
 	padding-top: 54px;
 	font-family: HelveticaNeueLTBold, sans-sefif;
-	font-size: 185px;
+	font-size: 183px;
 	font-weight: bold;
 	line-height: 158px;
 	text-align: left;
@@ -316,7 +316,8 @@ a {
 	margin-top: 25px;
 	display: block;
 	font-family: HelveticaNeue, sans-serif;
-	font-size: 11px;
+	font-size: 12px;
+	font-weight: normal;
 	line-height: 18px;
 	text-transform: uppercase;
 }
@@ -381,7 +382,7 @@ a {
 }
 .block__paragraph {
 	float: left;
-	width: 745px;
+	width: 750px;
 	font-family: Georgia, serif;
 	font-size: 26px;
 	line-height: 36px;
@@ -402,6 +403,9 @@ a {
 	font-family: HelveticaNeueLTBold, sans-serif;
 	font-size: 54px;
 	line-height: 60px;
+}
+.block__paragraph__quote--top45 {
+	margin-top: 45px;
 }
 .block__paragraph__quote--small {
 	margin-top: 25px;
@@ -478,8 +482,11 @@ a {
 	font-size: 16px;
 }
 .footer__link {
-	padding-right: 78px;
+	padding-right: 77px;
 	display: inline-block;
+}
+.footer__link--last {
+	padding-right: 0;
 }
 .menu {
 	float: left;

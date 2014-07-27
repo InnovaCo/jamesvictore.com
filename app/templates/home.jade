@@ -3,6 +3,9 @@ extends partials/layout
 block head
 	- page.title = 'Home';
 
+block header
+	- var current = 'home';
+
 block content
 	.image_block
 		img.image_block__image(src=page.assets + 'images/fish.jpg', alt='Home page image')
