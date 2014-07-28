@@ -1,8 +1,8 @@
 ul.footer
 	li.footer__link
-		a(href='mailto:james@jamesvictore.com;') james@jamesvictore.com
+		a.link--underlined(href='mailto:james@jamesvictore.com;') james@jamesvictore.com
 	li.footer__link open 23 hours
 	li.footer__link
-		a(href='javascript:void(0);') Subscribe to our newsletter
+		a.link--underlined(href='javascript:void(0);') Subscribe to our newsletter
 	block footer
-	li.footer__link.footer__link--last= page.sentence
+	li.footer__link.footer__link--last!= sentence
