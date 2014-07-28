@@ -8,7 +8,7 @@ block header
 
 block content
 	.image_block
-		img.image_block__image(src=page.assets + 'images/fish.jpg', alt='Home page image')
+		img.image_block__image(src=page.assets + 'images/fish.jpg', alt='Home page image', width='1400')
 		h1.h1.image_block__title 
 			| Design like you give
 			br
@@ -29,7 +29,7 @@ block content
 			a.block__link.block__link--oneline.block__link--white(href='javascript:void(0);') see what’s NEw in the studio
 
 	.image_block
-		img.image_block__image(src=page.assets + 'images/fish_small.jpg', alt='BOOK JAMES TO SPEAK', height='178px', width='100%')
+		img.image_block__image(src=page.assets + 'images/fish_small.jpg', alt='BOOK JAMES TO SPEAK', height='178', width='1400')
 		.wrapper--absolute.wrapper--padding74
 			a.block__link.block__link--white(href='javascript:void(0);') BOOK JAMES TO SPEAK
 		
@@ -39,7 +39,7 @@ block content
 			a.block__link.block__link--white(href='javascript:void(0);') CORPORATE + INDIVIDUAL workshops
 
 	.image_block
-		img.image_block__image(src=page.assets + 'images/fish_small.jpg', alt='BOOK JAMES TO SPEAK', height='178px', width='100%')
+		img.image_block__image(src=page.assets + 'images/fish_small.jpg', alt='ATTEND A LIVE EVENT', height='178px', width='1400px')
 		.wrapper--absolute.wrapper--padding27
 			h3.h3.h3--white ATTEND A LIVE EVENT
 			a.block__link.block__link--white(href='javascript:void(0);') THE DINNER SERIES
@@ -47,17 +47,16 @@ block content
 			a.block__link.block__link--white(href='javascript:void(0);') TAKE THIS JOB & LOVE IT
 	
 	.block
-		.wrapper--1000
-			h3.h3 YOU CAN ALSO:
-			a.block__link(href='javascript:void(0);') HIRE US FOR DESIGN WORK
-			br
-			a.block__link(href='javascript:void(0);') TAKE A CLASS ONLINE
-			br
-			a.block__link(href='javascript:void(0);') WATCH BURNING QUESTIONS
-			br
-			a.block__link(href='javascript:void(0);') SHOP FOR BOOKS, POSTERS, AND ARTwork
-			br
-			a.block__link(href='javascript:void(0);') SUBSCRIBE FOR EMAIL UPDATES
+		h3.h3 YOU CAN ALSO:
+		a.block__link(href='javascript:void(0);') HIRE US FOR DESIGN WORK
+		br
+		a.block__link(href='javascript:void(0);') TAKE A CLASS ONLINE
+		br
+		a.block__link(href='javascript:void(0);') WATCH BURNING QUESTIONS
+		br
+		a.block__link(href='javascript:void(0);') SHOP FOR BOOKS, POSTERS, AND ARTwork
+		br
+		a.block__link(href='javascript:void(0);') SUBSCRIBE FOR EMAIL UPDATES
 			
 block footer
 	- var sentence = 'Your work is a Gift';

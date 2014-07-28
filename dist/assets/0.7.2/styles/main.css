@@ -320,8 +320,10 @@ a {
 	background-color: rgba(0,0,0,.1);
 }
 .block {
+	margin: 0 auto;
 	padding-top: 21px;
 	padding-bottom: 21px;
+	width: 1000px;
 }
 .image_block {
 	position: relative;
@@ -330,6 +332,9 @@ a {
 	min-width: 1000px;
 	max-width: 1400px;
 	text-align: center;
+}
+.image_block--more {
+	margin-top: 16px;
 }
 .image_block__image {
 	position: relative;
@@ -344,6 +349,10 @@ a {
 	margin-left: -500px;
 	width: 1000px;
 	color: #fff;
+}
+.image_block__title--size154 {
+	font-size: 154px;
+	line-height: 140px;
 }
 .image_block__title--size160 {
 	font-size: 160px;
@@ -401,7 +410,7 @@ a {
 	margin: 0 auto;
 	width: 1000px;
 }
-.wrapper--oveflow-hidden {
+.wrapper--overflow-hidden {
 	overflow: hidden;
 }
 .wrapper--absolute {
@@ -441,8 +450,11 @@ a {
 	padding-top: 16px;
 }
 .block__link--quotes {
-	margin-top: 37px;
-	margin-bottom: 12px;
+	margin-top: 44px;
+	margin-bottom: 15px;
+}
+.block__link--more {
+	margin-top: 24px;
 }
 .block__paragraph {
 	float: left;
@@ -468,6 +480,9 @@ a {
 	font-family: HelveticaNeueLTBold, sans-serif;
 	font-size: 54px;
 	line-height: 60px;
+}
+.block__paragraph__quote--bottom15 {
+	margin-bottom: 15px;
 }
 .block__paragraph__quote--top45 {
 	margin-top: 45px;
@@ -510,6 +525,13 @@ a {
 .text--white {
 	color: #fff;
 }
+.text--bold {
+	margin-top: 4px;
+	margin-bottom: 10px;
+	font-family: HelveticaNeueLTBold, sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+}
 .block__list {
 	margin-bottom: 10px;
 }
@@ -541,6 +563,9 @@ a {
 }
 .block__events--top270 {
 	margin-top: 270px;
+}
+.block__events--top64 {
+	margin-top: 64px;
 }
 .block__events__item {
 	padding-top: 9px;
@@ -574,6 +599,15 @@ a {
 	text-decoration: none;
 	color: #b4b4b4;
 	border-bottom: none;
+}
+.signature {
+	position: absolute;
+	right: 190px;
+	bottom: 21px;
+	font-family: Georgia, serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
 }
 .footer {
 	margin: 0 auto;
@@ -616,6 +650,8 @@ a {
 	background: #000;
 }
 .menu__button--pink {
+	padding-right: 12px;
+	padding-left: 12px;
 	background-color: #f07673;
 	background-image: -webkit-linear-gradient(to right, #f07673 0%, #ff83bb 30%, #fd43a4 100%);
 	background-image:      -o-linear-gradient(to right, #f07673 0%, #ff83bb 30%, #fd43a4 100%);
@@ -624,6 +660,8 @@ a {
 	background-image:         linear-gradient(to right, #f07673 0%, #ff83bb 30%, #fd43a4 100%);
 }
 .menu__button--green {
+	padding-right: 12px;
+	padding-left: 12px;
 	background-color: #00bea3;
 	background-image: -webkit-linear-gradient(to right, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
 	background-image:      -o-linear-gradient(to right, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
