@@ -17,6 +17,10 @@ a
 	text-decoration none
 	border-bottom 3px solid #f128c1
 	
+.link--white
+	color #fff
+	border-color #fff
+	
 .main
 	margin-left auto
 	margin-right auto
@@ -37,14 +41,7 @@ a
 .clear
 	clear both
 	float none
-	height 0px
-
-.wrapper--1000
-	width 1000px
-	margin 0 auto
-
-.wrapper--oveflow-hidden
-	overflow hidden
+	height 0
 	
 .logo
 	width 215px
@@ -54,17 +51,17 @@ a
 	margin-bottom 15px
 	background url(../images/logo.png) 0 0 no-repeat
 	
-.logo--small
-	width 90px
-	height 41px
-	margin-left 0
-	margin-top 8px
-	margin-bottom 6px
-	background url(../images/logo-small.png) 0 0 no-repeat
+	&--small
+		width 90px
+		height 41px
+		margin-left 0
+		margin-top 8px
+		margin-bottom 6px
+		background url(../images/logo-small.png) 0 0 no-repeat
 
 .h1
-	margin-left -20px
-	margin-right -20px
+	margin-left 0
+	margin-right 0
 	margin-bottom 20px
 	padding-top: 54px;
 	font-family HelveticaNeueLTBold, sans-sefif
@@ -96,6 +93,40 @@ a
 	line-height 18px
 	text-transform uppercase
 	
+.input-text
+	display block
+	margin-bottom 20px
+	padding-left 40px
+	padding-right 40px
+	width 100%
+	height 50px
+	border none
+	
+.italic
+	font-style italic
+	
+.submit
+	display block
+	height 50px
+	width 256px
+	font-family HelveticaNeueLTBold, sans-serif
+	font-size 30px
+	line-height 30px
+	text-transform uppercase
+	color transparent
+	text-indent -999px
+	border 1px solid #fff
+	background url(../images/subscribe.png) 0 0 no-repeat
+	background-size 256px 50px
+
+	
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi)
+		background url(../images/subscribe@2.png) 0 0 no-repeat
+		background-s
+
+
+
+
 .description
 	margin-bottom 40px
 	font-size 18px
@@ -123,65 +154,78 @@ a
 	min-width 1000px
 	max-width 1400px
 
-.image_block__image
-	position relative
-	margin-left -50%
-	margin-right -50%
-	vertical-align middle
+	&__image
+		position relative
+		margin-left -50%
+		margin-right -50%
+		vertical-align middle
 
-.image_block__title
-	position absolute
-	top 0px
-	color #fff
-	left 50%
-	margin-left -500px
-	width 1000px
+	&__title
+		position absolute
+		top 0
+		color #fff
+		left 50%
+		margin-left -500px
+		width 1000px
 	
-.image_block__title--size160
-	font-size 160px
-	line-height 145px
+	&__title--size160
+		font-size 160px
+		line-height 145px
 	
-.image_block__title--size183
-	font-size 183px
-	line-height 155px
+	&__title--size183
+		font-size 183px
+		line-height 155px
 	
-.image_block__title__comment
-	display block
-	margin-top 25px
-	font-family HelveticaNeue, sans-serif
-	font-size 11px
-	font-weight normal
-	line-height 18px
-	letter-spacing 1px
-	text-transform uppercase
+	&__title__comment
+		display block
+		margin-top 25px
+		font-family HelveticaNeue, sans-serif
+		font-size 11px
+		font-weight normal
+		line-height 18px
+		letter-spacing 1px
+		text-transform uppercase
 
-.image_block__title__comment--top10
-	margin-top 10px
-	margin-bottom 15px
+	&__title__comment--top10
+		margin-top 10px
+		margin-bottom 15px
 	
 .gradient_block
 	padding-top 40px
-	padding-bottom 35px
+	padding-bottom 39px
 
-.gradient_block--pink
-	background-linear-gradient(to right, #f07673, 0%, #ff83bb, 30%, #fd43a4, 100%)
+	&--pink
+		background-linear-gradient(to right, #f07673, 0%, #ff83bb, 30%, #fd43a4, 100%)
 
 	
-.gradient_block--green
-	padding-top: 47px;
-	padding-bottom: 49px;
-	background-linear-gradient(to right, #00BEA3, 0%, #3CD52E, 30%, #FFF36E, 100%)
+	&--green
+		padding-top: 47px;
+		padding-bottom: 49px;
+		background-linear-gradient(to right, #00BEA3, 0%, #3CD52E, 30%, #FFF36E, 100%)
 
-.gradient_block__title
-	color #fff
+	&__title
+		color #fff
+		
+	&__title--size94
+		padding-top 6px
+		font-size: 94px;
+		line-height: 88px;
+
+.wrapper--1000
+	width 1000px
+	margin 0 auto
+
+.wrapper--oveflow-hidden
+	overflow hidden
 
 .wrapper--absolute
 	position absolute
-	top 0px
+	top 0
 	color #fff
 	left 50%
 	margin-left -500px
 	width 1000px
+	text-align left
 	
 .wrapper--padding74
 	padding-top 68px
@@ -193,7 +237,7 @@ a
 .block__link
 	display inline-block
 	padding-top 6px
-	margin-bottom 8px
+	margin-bottom 0
 	text-align left
 	font-family HelveticaNeueLTBold, sans-serif
 	font-size 30px
@@ -202,16 +246,17 @@ a
 	text-transform uppercase
 	border-bottom 3px solid #f128c1
 	
-.block__link--white
-	color #fff
+	&--white
+		color #fff
+		border-color #fff
 
-.block__link--oneline
-	padding-top 16px
-	padding-bottom 16px
+	&--oneline
+		padding-top 16px
+		margin-bottom 16px
 	
-.block__link--quotes
-	margin-top 45px
-	margin-bottom 12px
+	&--quotes
+		margin-top 37px
+		margin-bottom 12px
 
 .block__paragraph
 	width 750px
@@ -220,116 +265,124 @@ a
 	font-size 26px
 	line-height 36px
 	
-.block__paragraph--wide
-	width 100%
-	float none
+	&--wide
+		width 100%
+		float none
 
-.block__paragraph__title
-	padding-top 8px
-	padding-bottom 10px
-	font-family HelveticaNeue, sans-serif
-	font-size 11px
-	line-height 18px
-	text-transform uppercase
+	&__title
+		padding-top 8px
+		padding-bottom 10px
+		font-family HelveticaNeue, sans-serif
+		font-size 11px
+		line-height 18px
+		letter-spacing 1px
+		text-transform uppercase
 	
-.block__paragraph__quote--big
-	font-family HelveticaNeueLTBold, sans-serif
-	font-size 54px
-	line-height 60px
+	&__quote--big
+		font-family HelveticaNeueLTBold, sans-serif
+		font-size 54px
+		line-height 60px
 	
-.block__paragraph__quote--top45
-	margin-top 45px
+	&__quote--top45
+		margin-top 45px
 
-.block__paragraph__title--reviews
-	margin-top 12px
-	padding-bottom 0
+	&__title--reviews
+		margin-top 12px
+		padding-bottom 0
 	
-.block__paragraph__quote--small
-	font-family Georgia
-	font-style italic
-	font-size 26px
-	line-height 36px
-	margin-top 25px
+	&__quote--small
+		font-family Georgia
+		font-style italic
+		font-size 26px
+		line-height 36px
+		margin-top 25px
+		
+	&--subscribe
+		margin-top 120px
+		margin-bottom 28px
 	
 .quote__author
 	font-family Georgia
 	font-size 18px
 	line-height 36px
 	
-.quote__author--big
-	margin-top 19px
-	margin-bottom 2px
+	&--big
+		margin-top 19px
+		margin-bottom 2px
 
-.quote__author--small
-	font-style normal
-	line-height 30px
+	&--small
+		font-style normal
+		line-height 30px
 
 .text
 	margin-top 3px
 	margin-bottom 24px
 	
-.text--marginbottom16
-	margin-bottom 16px
+	&--marginbottom16
+		margin-bottom 16px
+	
+	&--white
+		color #fff
 	
 .block__list
 	margin-bottom 10px
 
-.block__list__item:before
-	position absolute
-	content "\2014"
-	left 0
+	&__item:before
+		position absolute
+		content "\2014"
+		left 0
 	
-.block__list__item
-	position relative
-	padding-left 35px
-	padding-bottom 17px
-	list-style-type none
-	line-height 35px
+	&__item
+		position relative
+		padding-left 35px
+		padding-bottom 17px
+		list-style-type none
+		line-height 35px
 	
 .block__events
 	float right
 	width 215px
 	margin-top 7px
 	
-.block__events--past
-	margin-top 30px
+	&--past
+		margin-top 30px
 
-.block__events--questions
-	margin-top 0
+	&--questions
+		margin-top 0
 
-.block__events--top18
-	margin-top 18px
+	&--top18
+		margin-top 18px
 	
-.block__events--top270
-	margin-top 270px
+	&--top270
+		margin-top 270px
 
-.block__events__item
-	padding-top 9px
-	padding-bottom 4px
-	font-family HelveticaNeueLTBold, sans-serif
-	font-size 16px
-	line-height 20px
+	&__item
+		padding-top 9px
+		padding-bottom 4px
+		font-family HelveticaNeueLTBold, sans-serif
+		font-size 16px
+		line-height 20px
 
-.block__events__image
-	margin-top 13px
+	&__image
+		margin-top 13px
 	
-.block__events__item--past
-	padding-top 3px
-	padding-bottom 11px
-	font-family HelveticaNeueLTBold, sans-serif
-	font-size 18px
-	line-height 20px
-	color #000
+	&__item--past
+		padding-top 8px
+		padding-bottom 5px
+		font-family HelveticaNeueLTBold, sans-serif
+		font-size 18px
+		line-height 20px
+		color #000
 	
-.block__events__item--questions
-	padding-top 8px
-	padding-bottom 5px
-	font-size 18px
-	line-height 20px
+	&__item--questions
+		padding-top 4px
+		padding-bottom 8px
+		font-size 18px
+		line-height 20px
 
-.block__events__item--disabled
-	text-decoration line-through
-	color #B4B4B4
+	&__item--disabled
+		text-decoration line-through
+		color #B4B4B4
 	
 .disabled
 	color #B4B4B4

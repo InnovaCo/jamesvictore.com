@@ -1,8 +1,23 @@
-ul.footer
-	li.footer__link
-		a.link--underlined(href='mailto:james@jamesvictore.com;') james@jamesvictore.com
-	li.footer__link open 23 hours
-	li.footer__link
-		a.link--underlined(href='javascript:void(0);') Subscribe to our newsletter
-	block footer
-	li.footer__link.footer__link--last!= sentence
+block header
+if current == 'subscribe'
+	.footer.footer--green
+		ul.wrapper--1000
+			li.footer__link.footer__link--white
+				a.link--underlined.link--white(href='mailto:james@jamesvictore.com;') james@jamesvictore.com
+			li.footer__link.footer__link--white open 23 hours
+
+			block footer
+			li.footer__link.footer__link--white.footer__link--last!= sentence
+else
+	.footer
+		ul.wrapper--1000
+		
+			li.footer__link
+				a.link--underlined(href='mailto:james@jamesvictore.com;') james@jamesvictore.com
+			li.footer__link open 23 hours
+			
+			li.footer__link
+				a.link--underlined(href='javascript:void(0);') Subscribe to our newsletter
+
+			block footer
+			li.footer__link.footer__link--last!= sentence
