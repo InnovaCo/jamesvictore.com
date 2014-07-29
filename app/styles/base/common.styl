@@ -1,6 +1,6 @@
 body
 	padding-top 0
-	padding-bottom 20px
+	padding-bottom 0
 	color #000
 	font-family HelveticaNeue, sans-serif
 	background-color #fff
@@ -50,6 +50,11 @@ a
 	margin-top 20px
 	margin-bottom 15px
 	background url(../images/logo.png) 0 0 no-repeat
+	background-size cover
+	
+	@media only screen and (-webkit-min-device-pixel-ratio: 2)
+		background url(../images/logo@2.png) 0 0 no-repeat
+		background-size cover
 	
 	&--small
 		width 90px
@@ -58,15 +63,19 @@ a
 		margin-top 8px
 		margin-bottom 6px
 		background url(../images/logo-small.png) 0 0 no-repeat
+		
+		@media only screen and (-webkit-min-device-pixel-ratio: 2)
+			background url(../images/logo-small@2.png) 0 0 no-repeat
+			background-size cover
 
 .h1
 	margin-left 0
 	margin-right 0
 	margin-bottom 20px
-	padding-top: 54px;
+	padding-top 54px
 	font-family HelveticaNeueLTBold, sans-sefif
 	font-size 183px
-	line-height: 158px;
+	line-height 158px
 	font-weight bold
 	text-align left
 
@@ -117,15 +126,11 @@ a
 	text-indent -999px
 	border 1px solid #fff
 	background url(../images/subscribe.png) 0 0 no-repeat
-	background-size 256px 50px
+	background-size cover
 
-	
-	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi)
+	@media only screen and (-webkit-min-device-pixel-ratio: 2)
 		background url(../images/subscribe@2.png) 0 0 no-repeat
-		background-s
-
-
-
+		background-size cover
 
 .description
 	margin-bottom 40px
@@ -174,7 +179,7 @@ a
 		width 1000px
 	
 	&__title--size154
-		font-size 154px
+		font-size 150px
 		line-height 140px
 	
 	&__title--size160
@@ -184,6 +189,10 @@ a
 	&__title--size183
 		font-size 183px
 		line-height 155px
+		
+	&__title--size310
+		font-size 310px
+		line-height 233px
 	
 	&__title__comment
 		display block
@@ -208,17 +217,21 @@ a
 
 	
 	&--green
-		padding-top: 47px;
-		padding-bottom: 49px;
+		padding-top 47px
+		padding-bottom 49px
 		background-linear-gradient(to right, #00BEA3, 0%, #3CD52E, 30%, #FFF36E, 100%)
+		
+	&--violet
+		padding-top 21px
+		background-linear-gradient(to right, #8B69D3, 0%, #F128C1, 30%, #FF85BB, 100%)
 
 	&__title
 		color #fff
 		
 	&__title--size94
 		padding-top 6px
-		font-size: 94px;
-		line-height: 88px;
+		font-size 94px
+		line-height 88px
 
 .wrapper--1000
 	width 1000px
@@ -242,6 +255,9 @@ a
 		
 .wrapper--padding27
 	padding-top 27px
+		
+.wrapper--padding36
+	padding-top 36px
 	
 .block__link
 	display inline-block
@@ -280,6 +296,12 @@ a
 	&--wide
 		width 100%
 		float none
+
+	&--narrow
+		width 100%
+		float none
+		font-size 18px
+		line-height 24px
 
 	&__title
 		padding-top 8px
@@ -345,6 +367,13 @@ a
 		font-family HelveticaNeueLTBold, sans-serif
 		font-size 30px
 		line-height 30px
+		
+	&--contacts
+		margin-top 7px
+		margin-bottom 13px
+		font-family HelveticaNeueLTBold, sans-serif
+		font-size 18px
+		line-height 20px
 	
 .block__list
 	margin-bottom 10px
@@ -422,3 +451,19 @@ a
 	font-size 18px
 	line-height 24px
 	color #fff
+	
+.column
+	width 480px
+	float left
+	
+	&--left
+		margin-right 38px
+	
+	&--right
+		margin-top 3px
+		
+	&--narrow
+		margin-top 9px
+		margin-bottom 7px
+		width 220px
+		

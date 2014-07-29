@@ -170,7 +170,7 @@ table {
 }
 body {
 	padding-top: 0;
-	padding-bottom: 20px;
+	padding-bottom: 0;
 	font-family: HelveticaNeue, sans-serif;
 	cursor: default;
 	color: #000;
@@ -227,6 +227,13 @@ a {
 	width: 215px;
 	height: 99px;
 	background: url('../images/logo.png') 0 0 no-repeat;
+	background-size: cover;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.logo {
+		background: url('../images/logo@2.png') 0 0 no-repeat;
+		background-size: cover;
+	}
 }
 .logo--small {
 	margin-top: 8px;
@@ -235,6 +242,12 @@ a {
 	width: 90px;
 	height: 41px;
 	background: url('../images/logo-small.png') 0 0 no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.logo--small {
+		background: url('../images/logo-small@2.png') 0 0 no-repeat;
+		background-size: cover;
+	}
 }
 .h1 {
 	margin-right: 0;
@@ -293,12 +306,13 @@ a {
 	text-transform: uppercase;
 	color: transparent;
 	background: url('../images/subscribe.png') 0 0 no-repeat;
-	background-size: 256px 50px;
+	background-size: cover;
 	border: 1px solid #fff;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	.submit {
 		background: url('../images/subscribe@2.png') 0 0 no-repeat;
+		background-size: cover;
 	}
 }
 .description {
@@ -351,7 +365,7 @@ a {
 	color: #fff;
 }
 .image_block__title--size154 {
-	font-size: 154px;
+	font-size: 150px;
 	line-height: 140px;
 }
 .image_block__title--size160 {
@@ -361,6 +375,10 @@ a {
 .image_block__title--size183 {
 	font-size: 183px;
 	line-height: 155px;
+}
+.image_block__title--size310 {
+	font-size: 310px;
+	line-height: 233px;
 }
 .image_block__title__comment {
 	margin-top: 25px;
@@ -398,6 +416,15 @@ a {
 	background-image:      -o-linear-gradient(left, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
 	background-image:         linear-gradient(to right, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
 }
+.gradient_block--violet {
+	padding-top: 21px;
+	background-color: #8b69d3;
+	background-image: -webkit-linear-gradient(to right, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image:      -o-linear-gradient(to right, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image: -webkit-linear-gradient(left, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image:      -o-linear-gradient(left, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image:         linear-gradient(to right, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+}
 .gradient_block__title {
 	color: #fff;
 }
@@ -428,6 +455,9 @@ a {
 }
 .wrapper--padding27 {
 	padding-top: 27px;
+}
+.wrapper--padding36 {
+	padding-top: 36px;
 }
 .block__link {
 	margin-bottom: 0;
@@ -466,6 +496,12 @@ a {
 .block__paragraph--wide {
 	float: none;
 	width: 100%;
+}
+.block__paragraph--narrow {
+	float: none;
+	width: 100%;
+	font-size: 18px;
+	line-height: 24px;
 }
 .block__paragraph__title {
 	padding-top: 8px;
@@ -531,6 +567,13 @@ a {
 	font-family: HelveticaNeueLTBold, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
+}
+.text--contacts {
+	margin-top: 7px;
+	margin-bottom: 13px;
+	font-family: HelveticaNeueLTBold, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
 }
 .block__list {
 	margin-bottom: 10px;
@@ -609,6 +652,21 @@ a {
 	line-height: 24px;
 	color: #fff;
 }
+.column {
+	float: left;
+	width: 480px;
+}
+.column--left {
+	margin-right: 38px;
+}
+.column--right {
+	margin-top: 3px;
+}
+.column--narrow {
+	margin-top: 9px;
+	margin-bottom: 7px;
+	width: 220px;
+}
 .footer {
 	margin: 0 auto;
 	padding: 99px 0;
@@ -623,6 +681,14 @@ a {
 	background-image: -webkit-linear-gradient(left, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
 	background-image:      -o-linear-gradient(left, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
 	background-image:         linear-gradient(to right, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
+}
+.footer--violet {
+	background-color: #8b69d3;
+	background-image: -webkit-linear-gradient(to right, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image:      -o-linear-gradient(to right, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image: -webkit-linear-gradient(left, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image:      -o-linear-gradient(left, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image:         linear-gradient(to right, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
 }
 .footer__link {
 	padding-right: 77px;
