@@ -466,3 +466,45 @@ a
 		margin-top 9px
 		margin-bottom 7px
 		width 220px
+
+#livepreview_dialog
+	padding 0px
+	height 205px
+	width 305px
+	background-color #fff
+	background-image url(../images/icon_loading.gif)
+	background-repeat no-repeat
+	background-position center center
+	position absolute
+	box-shadow 0px 0px 4px #999;
+	
+#livepreview_dialog iframe
+	border none
+
+
+#livepreview_dialog.left:after, #livepreview_dialog.left:before
+	border none
+	content " "
+	height 0
+	width 0
+	position absolute
+	pointer-events none
+
+#livepreview_dialog.right:before 
+	left 0px
+	margin-left -45px
+	content " "
+	height 0
+	width 0
+	position absolute
+	pointer-events none
+	top 50%
+	margin-top -20px
+	border none
+
+#livepreview_dialog.left:after
+	right 0
+	margin-right -45px
+	top 50%
+	margin-top -20px
+

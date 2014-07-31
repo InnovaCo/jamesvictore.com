@@ -1,5 +1,3 @@
-$(function () {
-	'use strict';
-
-	console.info('CSSSR Project Template');
+$(document).ready(function() { 
+  $('a').livePreview();
 });

@@ -667,6 +667,47 @@ a {
 	margin-bottom: 7px;
 	width: 220px;
 }
+#livepreview_dialog {
+	position: absolute;
+	padding: 0;
+	width: 305px;
+	height: 205px;
+	background-color: #fff;
+	background-image: url('../images/icon_loading.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+	box-shadow: 0 0 4px #999;
+}
+#livepreview_dialog iframe {
+	border: none;
+}
+#livepreview_dialog.left:after,
+#livepreview_dialog.left:before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: ' ';
+	pointer-events: none;
+	border: none;
+}
+#livepreview_dialog.right:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -20px;
+	margin-left: -45px;
+	width: 0;
+	height: 0;
+	content: ' ';
+	pointer-events: none;
+	border: none;
+}
+#livepreview_dialog.left:after {
+	top: 50%;
+	right: 0;
+	margin-top: -20px;
+	margin-right: -45px;
+}
 .footer {
 	margin: 0 auto;
 	padding: 99px 0;
