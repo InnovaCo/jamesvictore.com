@@ -483,6 +483,9 @@ a {
 	margin-top: 44px;
 	margin-bottom: 15px;
 }
+.block__link--class {
+	margin-bottom: 35px;
+}
 .block__link--more {
 	margin-top: 24px;
 }
