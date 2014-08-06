@@ -350,6 +350,34 @@ a {
 .image_block--more {
 	margin-top: 16px;
 }
+.image_block--first {
+	max-width: 100%;
+	height: 650px;
+}
+.image_block--class {
+	background: url('../images/class1.jpg') center top repeat-x;
+}
+.image_block--bq {
+	background: url('../images/watch.jpg') center top repeat-x;
+}
+.image_block--about {
+	background: url('../images/about.jpg') center top repeat-x;
+}
+.image_block--contact {
+	background: url('../images/contact.jpg') center top repeat-x;
+}
+.image_block--contact__gradient {
+	position: absolute;
+	width: 100%;
+	height: 650px;
+	background-color: #8b69d3;
+	background-image: -webkit-linear-gradient(to right, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image:      -o-linear-gradient(to right, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image: -webkit-linear-gradient(left, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image:      -o-linear-gradient(left, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	background-image:         linear-gradient(to right, #8b69d3 0%, #f128c1 30%, #ff85bb 100%);
+	opacity: .5;
+}
 .image_block__image {
 	position: relative;
 	margin-right: -50%;
@@ -459,6 +487,9 @@ a {
 .wrapper--padding36 {
 	padding-top: 36px;
 }
+.wrapper--video {
+	background: #000;
+}
 .block__link {
 	margin-bottom: 0;
 	padding-top: 6px;
@@ -519,6 +550,7 @@ a {
 	font-family: HelveticaNeueLTBold, sans-serif;
 	font-size: 54px;
 	line-height: 60px;
+	text-indent: -20px;
 }
 .block__paragraph__quote--bottom15 {
 	margin-bottom: 15px;
@@ -536,6 +568,7 @@ a {
 	font-size: 26px;
 	font-style: italic;
 	line-height: 36px;
+	text-indent: -15px;
 }
 .block__paragraph--subscribe {
 	margin-top: 120px;
@@ -583,13 +616,13 @@ a {
 }
 .block__list__item:before {
 	position: absolute;
-	left: 0;
+	left: -20px;
 	content: '\2014';
 }
 .block__list__item {
 	position: relative;
 	padding-bottom: 17px;
-	padding-left: 35px;
+	padding-left: 14px;
 	list-style-type: none;
 	line-height: 35px;
 }
