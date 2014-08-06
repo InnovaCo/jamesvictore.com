@@ -339,6 +339,9 @@ a {
 	padding-bottom: 21px;
 	width: 1000px;
 }
+.block--top {
+	padding-top: 6px;
+}
 .image_block {
 	position: relative;
 	margin: 0 auto;
@@ -368,6 +371,9 @@ a {
 }
 .image_block--courage {
 	background: url('../images/courage.jpg') center top repeat-x;
+}
+.image_block--event {
+	background: url('../images/event.jpg') center top repeat-x;
 }
 .image_block--contact__gradient {
 	position: absolute;
@@ -613,6 +619,11 @@ a {
 	font-family: HelveticaNeueLTBold, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
+}
+.text--big {
+	font-family: HelveticaNeueLTBold, sans-serif;
+	font-size: 54px;
+	line-height: 60px;
 }
 .block__list {
 	margin-bottom: 10px;
