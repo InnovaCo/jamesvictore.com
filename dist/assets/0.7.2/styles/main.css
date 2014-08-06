@@ -366,6 +366,9 @@ a {
 .image_block--contact {
 	background: url('../images/contact.jpg') center top repeat-x;
 }
+.image_block--courage {
+	background: url('../images/courage.jpg') center top repeat-x;
+}
 .image_block--contact__gradient {
 	position: absolute;
 	width: 100%;
@@ -580,7 +583,7 @@ a {
 	line-height: 36px;
 }
 .quote__author--big {
-	margin-top: 19px;
+	margin-top: 3px;
 	margin-bottom: 2px;
 }
 .quote__author--small {
