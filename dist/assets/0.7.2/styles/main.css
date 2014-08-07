@@ -393,6 +393,10 @@ a {
 	margin-left: -50%;
 	vertical-align: middle;
 }
+.image_block__sign {
+	margin-top: 14px;
+	margin-left: -5px;
+}
 .image_block__title {
 	position: absolute;
 	top: 0;
