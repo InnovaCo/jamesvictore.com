@@ -8,10 +8,10 @@ block header
 
 block content
 	.image_block.image_block--first.image_block--about
-		
-		h1.h1.image_block__title.image_block__title--size154
-			span.image_block__title__comment about the studio
-			| Think Banksy meets Tony Robbins
+		a.image_block__link(href='javascript:void(0);')
+			h1.h1.image_block__title.image_block__title--size154
+				span.image_block__title__comment about the studio
+				| Think Banksy meets Tony Robbins
 			
 	.block
 		.wrapper--1000.wrapper--overflow-hidden
@@ -137,8 +137,9 @@ block content
 		.clear
 
 	.image_block.image_block--more
-		img.image_block__image(src=page.assets + 'images/about3.jpg', alt='The team', width='1400', height='650')
-		.signature photo by Bas Berkhout
+		a.image_block__link(href='javascript:void(0);')
+			img.image_block__image(src=page.assets + 'images/about3.jpg', alt='The team', width='1400', height='650')
+			.signature photo by Bas Berkhout
 		
 	.block
 		.block__paragraph 
