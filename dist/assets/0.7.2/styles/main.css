@@ -399,6 +399,13 @@ a {
 	margin-left: -50%;
 	vertical-align: middle;
 }
+.image_block__image--blurred {
+	-webkit-filter: blur(15px);
+	        filter: blur(15px);
+	   -moz-filter: blur(15px);
+	     -o-filter: blur(15px);
+	    -ms-filter: blur(15px);
+}
 .image_block__sign {
 	margin-top: 14px;
 	margin-left: -5px;
