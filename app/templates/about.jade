@@ -7,9 +7,9 @@ block header
 	- var current = 'about';
 
 block content
-	.image_block.image_block--first.image_block--about
+	.image_block.image_block--first
 		a.image_block__link(href='javascript:void(0);')
-			img.image_block__image.image_block__image--blurred.js-blurrr-image(src=page.assets + 'images/about.jpg', alt='Home page image', width='1400')
+			img.image_block__image.image_block__image--blurred.js-blurrr-image(src=page.assets + 'images/about.jpg', alt='Home page image', width='1400', height='650')
 			h1.h1.image_block__title.image_block__title--size154.js-blurrr-text
 				span.image_block__title__comment about the studio
 				| Think Banksy meets Tony Robbins
@@ -73,6 +73,7 @@ block content
 
 	.image_block.image_block--more
 		img.image_block__image.image_block__image--blurred.js-blurrr-image(src=page.assets + 'images/about2.jpg', alt='More photos', width='1400', height='650')
+
 		.wrapper--absolute
 			a.block__link.block__link--white.block__link--more.link--preview(href='javascript:void(0);') more photos and work in high quality
 			
