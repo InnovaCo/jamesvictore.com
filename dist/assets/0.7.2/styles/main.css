@@ -884,6 +884,12 @@ a {
 	text-transform: uppercase;
 	color: #000;
 }
+.contacts__link--contact {
+	margin-right: 20px;
+}
+.contacts__link--social {
+	margin-left: 3px;
+}
 .fork::-moz-selection {
 	background-color: transparent;
 }
