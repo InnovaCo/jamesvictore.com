@@ -9,7 +9,8 @@ block header
 block content
 	.image_block.image_block--first.image_block--courage
 		a.image_block__link(href='javascript:void(0);')
-			h1.h1.image_block__title.image_block__title--size154
+			.image_block__background.image_block__background--courage.blurred.js-blurrr-image
+			h1.h1.image_block__title.image_block__title--size154.js-blurrr-text
 				span.image_block__title__comment Courage, faith + cocktails
 			
 	.block
@@ -56,7 +57,7 @@ block content
 		
 	.image_block
 		a.image_block__link(href='javascript:void(0);')
-			img.image_block__image.image_block__image--blurred.js-blurrr-image(src=page.assets + 'images/courage2.jpg', alt='Courage', width='1400', height='650')
+			img.image_block__image(src=page.assets + 'images/courage2.jpg', alt='Courage', width='1400', height='650')
 		
 	.block		
 		.block__paragraph
@@ -70,7 +71,7 @@ block content
 		.clear
 
 	.image_block
-		iframe.video.image_block__image--blurred.js-blurrr-image(src='//player.vimeo.com/video/95415863', width='100%', height='787', frameborder='0', webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+		iframe.video(src='//player.vimeo.com/video/95415863', width='100%', height='787', frameborder='0', webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
 
 	.block
 		.block__paragraph.block__paragraph--wide

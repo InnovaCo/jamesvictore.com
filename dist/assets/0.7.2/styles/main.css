@@ -353,30 +353,38 @@ a {
 .image_block--more {
 	margin-top: 16px;
 }
-.image_block--first {
+.image_block--first,
+.image_block__background {
 	max-width: 100%;
 	height: 650px;
 }
-.image_block--class {
-	background: url('../images/class1.jpg') center top repeat-x;
+.image_block--home {
+	height: 560px;
 }
-.image_block--bq {
-	background: url('../images/watch.jpg') center top repeat-x;
-}
-.image_block--about {
-	background: url('../images/about.jpg') center top repeat-x;
-}
-.image_block--contact {
+.image_block__background--contact {
 	background: url('../images/contact.jpg') center top repeat-x;
 }
-.image_block--courage {
+.image_block__background--courage {
 	background: url('../images/courage.jpg') center top repeat-x;
 }
-.image_block--event {
+.image_block__background--home {
+	background: url('../images/fish.jpg') center top repeat-x;
+}
+.image_block__background--class {
+	background: url('../images/class1.jpg') center top repeat-x;
+}
+.image_block__background--bq {
+	background: url('../images/watch.jpg') center top repeat-x;
+}
+.image_block__background--about {
+	background: url('../images/about.jpg') center top repeat-x;
+}
+.image_block__background--event {
 	background: url('../images/event.jpg') center top repeat-x;
 }
 .image_block--contact__gradient {
 	position: absolute;
+	z-index: 50;
 	width: 100%;
 	height: 650px;
 	background-color: #8b69d3;
@@ -399,16 +407,6 @@ a {
 	margin-left: -50%;
 	vertical-align: middle;
 }
-.image_block__image--blurred {
-	-webkit-transform: translate3d(0, 0, 0);
-	        transform: translate3d(0, 0, 0);
-
-	-webkit-filter: blur(15px);
-	        filter: blur(15px);
-	   -moz-filter: blur(15px);
-	     -o-filter: blur(15px);
-	    -ms-filter: blur(15px);
-}
 .image_block__sign {
 	margin-top: 14px;
 	margin-left: -5px;
@@ -420,6 +418,9 @@ a {
 	margin-left: -500px;
 	width: 1000px;
 	color: #fff;
+}
+.image_block__title--contact {
+	z-index: 100;
 }
 .image_block__title--size154 {
 	font-size: 150px;
@@ -736,6 +737,16 @@ a {
 	margin-top: 9px;
 	margin-bottom: 7px;
 	width: 220px;
+}
+.blurred {
+	-webkit-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
+
+	-webkit-filter: blur(15px);
+	        filter: blur(15px);
+	   -moz-filter: blur(15px);
+	     -o-filter: blur(15px);
+	    -ms-filter: blur(15px);
 }
 #livepreview_dialog {
 	position: absolute;

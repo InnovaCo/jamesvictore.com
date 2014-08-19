@@ -168,29 +168,37 @@ a
 		margin-top 16px
 		
 	&--first
+	&__background
 		max-width 100%
 		height 650px
 
-	&--class
-		background url(../images/class1.jpg) center top repeat-x
+	&--home
+		height 560px
 
-	&--bq
-		background url(../images/watch.jpg) center top repeat-x
-
-	&--about
-		background url(../images/about.jpg) center top repeat-x
-
-	&--contact
+	&__background--contact
 		background url(../images/contact.jpg) center top repeat-x
 
-	&--courage
+	&__background--courage
 		background url(../images/courage.jpg) center top repeat-x
 
-	&--event
+	&__background--home
+		background url(../images/fish.jpg) center top repeat-x
+
+	&__background--class
+		background url(../images/class1.jpg) center top repeat-x
+
+	&__background--bq
+		background url(../images/watch.jpg) center top repeat-x
+
+	&__background--about
+		background url(../images/about.jpg) center top repeat-x
+
+	&__background--event
 		background url(../images/event.jpg) center top repeat-x
 		
 	&--contact__gradient
 		position absolute
+		z-index 50
 		width 100%
 		height 650px
 		background-linear-gradient(to right, #8B69D3, 0%, #F128C1, 30%, #FF85BB, 100%)
@@ -208,15 +216,6 @@ a
 		margin-right -50%
 		vertical-align middle
 
-	&__image--blurred
-		-webkit-filter blur(15px)
-		filter blur(15px)
-		-moz-filter blur(15px)
-		-o-filter blur(15px)
-		-ms-filter blur(15px)
-		transform translate3d(0,0,0)
-
-		
 	&__sign
 		margin-top 14px
 		margin-left -5px
@@ -228,6 +227,9 @@ a
 		left 50%
 		margin-left -500px
 		width 1000px
+
+	&__title--contact
+		z-index 100
 	
 	&__title--size154
 		font-size 150px
@@ -531,6 +533,14 @@ a
 		margin-top 9px
 		margin-bottom 7px
 		width 220px
+
+.blurred
+	-webkit-filter blur(15px)
+	filter blur(15px)
+	-moz-filter blur(15px)
+	-o-filter blur(15px)
+	-ms-filter blur(15px)
+	transform translate3d(0,0,0)
 
 #livepreview_dialog
 	padding 0px
