@@ -1,22 +1,30 @@
 $(function(){
-    $('.video').appear();
-    var $body = $('body');
+    var $videos = $('.video');
 
-    $body.on('appear', '.video', function(evt, $video){
-        var videoOffsetTop = $video.offset().top;
-        var videoHalfHeight = ($video.height() / 2);
+    var topScrollCallback = function(direction){
+        var v = $f(this);
 
-        var videoTopTriggeringOffset = videoOffsetTop - videoHalfHeight;
-        var videoBottomTriggeringOffset = videoOffsetTop + videoHalfHeight;
-        var bodyOffset = $body.scrollTop();
-
-        if (bodyOffset >= videoTopTriggeringOffset &&
-            bodyOffset <= videoBottomTriggeringOffset){
-            $f($video[0]).api('play');
+        if (direction === 'down'){
+            v.api('play');
         }
-    });
+        else {
+            v.api('pause');
+        }
 
-    $body.on('disappear', '.video', function(evt, $video){
-        $f($video[0]).api('pause');
-    });
+        console.log(direction);
+    };
+
+    var bottomScrollCallback = function(direction){
+        var v = $f(this);
+
+        if (direction === 'up'){
+            v.api('play');
+        }
+        else {
+            v.api('pause');
+        }
+    };
+
+    $videos.waypoint(topScrollCallback, { offset: 0 });
+    $videos.waypoint(bottomScrollCallback, { offset: '-100%' });
 });
