@@ -11,9 +11,24 @@ body
 		padding-bottom 0
 
 a
+	position relative
+	z-index 1
+	text-decoration none
 	color #F128C1
+
+	&:before
+		position absolute
+		bottom -1px
+		z-index -1
+		display block
+		width 100%
+		content ''
+		border-bottom 3px solid #f128c1
+
+	&.disabled:before
+		border-color #B4B4B4
 	
-.link--underlined
+/*.link--underlined
 	position relative
 	z-index 1
 	text-decoration none
@@ -29,12 +44,14 @@ a
 		border-bottom 3px solid #f128c1
 
 	&.disabled:before
-		border-color #B4B4B4
+		border-color #B4B4B4*/
 
-	
 .link--white
 	color #fff
 	border-color #fff
+
+	&:before
+		border-color #fff
 	
 .main
 	margin-left auto
@@ -341,11 +358,14 @@ a
 	line-height 31px
 	text-decoration none
 	text-transform uppercase
-	border-bottom 3px solid #f128c1
+	//border-bottom 3px solid #f128c1
 	
 	&--white
 		color #fff
 		border-color #fff
+
+		&:before
+			border-color #fff
 
 	&--oneline
 		padding-top 16px
