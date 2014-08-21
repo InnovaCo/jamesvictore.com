@@ -14,8 +14,23 @@ a
 	color #F128C1
 	
 .link--underlined
+	position relative
+	z-index 1
 	text-decoration none
-	border-bottom 3px solid #f128c1
+	//border-bottom 3px solid #f128c1
+
+	&:before
+		position absolute
+		bottom -1px
+		z-index -1
+		display block
+		width 100%
+		content ''
+		border-bottom 3px solid #f128c1
+
+	&.disabled:before
+		border-color #B4B4B4
+
 	
 .link--white
 	color #fff
