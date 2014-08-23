@@ -82,8 +82,6 @@ function addBlurEffects(options){
         $wrappedElements.prependTo('.main');
         $('.js-fixed-wrapper').remove();
 
-        console.log('text.hidden');
-
         evt.data.$text.one('victore.text.shown', null, { $text: evt.data.$text }, textShownCallback);
     }
 
