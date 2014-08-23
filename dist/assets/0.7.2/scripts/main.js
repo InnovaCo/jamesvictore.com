@@ -4,11 +4,18 @@ $(document).ready(function() {
     addBlurEffects({
         image: '.js-blurrr-image',
         text: '.js-blurrr-text',
-        maxBlur: 15
+        maxBlur: 5
     });
 });
 
 function addBlurEffects(options){
+    var $wrappedElements = $('.header, .header + div');
+    var wrapperString = '<div class="js-fixed-wrapper fixed-wrapper"></div>';
+
+    $wrappedElements.wrapAll(wrapperString);
+
+    var $fixedWrapper = $('.js-fixed-wrapper');
+
     function scrollHandler(evt){
         var offset, coefficient, blur, opacity,
             windowScroll = $(window).scrollTop();
@@ -16,8 +23,6 @@ function addBlurEffects(options){
         if (evt.data.imageOffsetTop <  $(window).height() && windowScroll < evt.data.imageOffsetTop){
             blur = Math.floor(evt.data.initialBlur - windowScroll / 10);
             opacity = 1 - windowScroll / 100;
-
-            console.log(blur, opacity);
         }
         else {
             // some magic...
@@ -29,16 +34,25 @@ function addBlurEffects(options){
             opacity = coefficient / 100;
         }
 
-        if (blur < 0) {
+        if (blur <= 0) {
             blur = 0;
         }
 
-        if (blur > options.maxBlur) {
+        if (blur >= options.maxBlur) {
             blur = options.maxBlur;
         }
 
-        if (opacity > 1) { opacity = 1; }
-        if (opacity < 0) { opacity = 0; }
+        if (opacity >= 1) {
+            opacity = 1;
+
+            evt.data.$text.trigger('victore.text.shown');
+        }
+
+        if (opacity < 0) {
+            opacity = 0;
+
+            evt.data.$text.trigger('victore.text.hidden');
+        }
 
         //evt.data.filter.setStdDeviation(blur, blur);
 
@@ -55,6 +69,18 @@ function addBlurEffects(options){
         evt.data.$text.css({ opacity: opacity });
     }
 
+    function textShownCallback(evt){
+        $wrappedElements.wrapAll(wrapperString);
+
+        evt.data.$text.one('victore.text.shown', null, { $text: evt.data.$text }, textShownCallback);
+    }
+
+    function textHiddenCallback(evt){
+        $wrappedElements.unwrap();
+
+        evt.data.$text.one('victore.text.hidden', null, { $text: evt.data.$text }, textHiddenCallback);
+    }
+
     var $image = $(options.image);
 
     $image.each(function(){
@@ -64,6 +90,10 @@ function addBlurEffects(options){
         var imageHalfHeight = imageHeight / 2;
 
         var $text = $this.nextAll(options.text + ':first');
+        var textData = { $text: $text };
+
+        $text.one('victore.text.shown', null, textData, textShownCallback);
+        $text.one('victore.text.hidden', null, textData, textHiddenCallback);
 
        // var filter = $('> filter', $this).get(0).firstElementChild;
         var initialBlur = options.maxBlur;//parseInt(filter.getAttribute('stdDeviation'));
