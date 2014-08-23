@@ -364,6 +364,18 @@ a.disabled:before {
 	max-width: 1400px;
 	text-align: center;
 }
+.image_block--wide {
+	max-width: 100%;
+}
+.image_block--h178 {
+	height: 178px;
+}
+.image_block--home-speak {
+	background: url('../images/fish_small.jpg') center 0;
+}
+.image_block--home-courage-event {
+	background: url('../images/fish_small.jpg') center 0;
+}
 .image_block--more {
 	margin-top: 16px;
 }
