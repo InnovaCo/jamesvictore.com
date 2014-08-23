@@ -75,14 +75,16 @@ function addBlurEffects(options){
         $('.js-fixed-wrapper').remove();
         $wrappedElements.wrapAll(wrapperString);
 
-        evt.data.$text.one('victore.text.shown', null, { $text: evt.data.$text }, textShownCallback);
+        evt.data.$text.one('victore.text.hidden', null, { $text: evt.data.$text }, textHiddenCallback);
     }
 
     function textHiddenCallback(evt){
         $wrappedElements.prependTo('.main');
         $('.js-fixed-wrapper').remove();
 
-        evt.data.$text.one('victore.text.hidden', null, { $text: evt.data.$text }, textHiddenCallback);
+        console.log('text.hidden');
+
+        evt.data.$text.one('victore.text.shown', null, { $text: evt.data.$text }, textShownCallback);
     }
 
     var $image = $(options.image);
