@@ -734,11 +734,16 @@ a.disabled:before {
 }
 .signature {
 	position: absolute;
-	right: 190px;
+	right: 0;
 	bottom: 21px;
+	left: 0;
+	margin: auto;
+	padding-right: 34px;
+	width: 1000px;
 	font-family: Georgia, serif;
 	font-size: 18px;
 	line-height: 24px;
+	text-align: right;
 	color: #fff;
 }
 .column {
