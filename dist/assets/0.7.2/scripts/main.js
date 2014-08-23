@@ -9,7 +9,8 @@ $(document).ready(function() {
 });
 
 function addBlurEffects(options){
-    var $wrappedElements = $('.header, .header + div');
+    var wrappedElementsString = '.header, .header + div';
+    var $wrappedElements = $(wrappedElementsString);
     var wrapperString = '<div class="js-fixed-wrapper fixed-wrapper"></div>';
 
     $wrappedElements.wrapAll(wrapperString);
@@ -70,13 +71,16 @@ function addBlurEffects(options){
     }
 
     function textShownCallback(evt){
+        $wrappedElements.prependTo('.main');
+        $('.js-fixed-wrapper').remove();
         $wrappedElements.wrapAll(wrapperString);
 
         evt.data.$text.one('victore.text.shown', null, { $text: evt.data.$text }, textShownCallback);
     }
 
     function textHiddenCallback(evt){
-        $wrappedElements.unwrap();
+        $wrappedElements.prependTo('.main');
+        $('.js-fixed-wrapper').remove();
 
         evt.data.$text.one('victore.text.hidden', null, { $text: evt.data.$text }, textHiddenCallback);
     }
