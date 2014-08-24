@@ -68,6 +68,7 @@ function addBlurEffects(options){
         });
 
         evt.data.$text.css({ opacity: opacity });
+        evt.data.$shadowed.css({ opacity: opacity });
     }
 
     function textShownCallback(evt){
@@ -102,6 +103,9 @@ function addBlurEffects(options){
        // var filter = $('> filter', $this).get(0).firstElementChild;
         var initialBlur = options.maxBlur;//parseInt(filter.getAttribute('stdDeviation'));
 
+        var $thisParent = $this.parent();
+        $('<div class="js-shadowed shadowed"></div>').appendTo($thisParent);
+
         function waypointCallback(direction){
             var data = {
                 direction: direction,
@@ -110,7 +114,8 @@ function addBlurEffects(options){
                 initialBlur: initialBlur,
                 //filter: filter,
                 $img: $this,
-                $text: $text
+                $text: $text,
+                $shadowed: $('.js-shadowed', $thisParent)
             };
 
             $(window).on('scroll', data, scrollHandler);
