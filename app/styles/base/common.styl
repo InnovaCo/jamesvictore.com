@@ -16,17 +16,38 @@ a
 	text-decoration none
 	color #F128C1
 
-	&:before
-		position absolute
-		bottom -1px
-		z-index -1
-		display block
-		width 100%
-		content ''
-		border-bottom 3px solid #f128c1
+.link-wrapper
+	position relative
+	top -0.2rem
+	border-bottom 3px solid #f128c1
 
-	&.disabled:before
-		border-color #B4B4B4
+	&--white
+		border-color #fff
+
+	&--block
+		top -0.1rem
+
+	&--narrow
+		top -0.1rem
+
+	&--zero
+		top 0
+
+	&__link
+		position relative
+		top 0.2rem
+
+		&--block
+			top -0.3rem
+
+		&--narrow
+			top 0.1rem
+
+		&--zero
+			top 0
+
+		&--white
+			color #fff
 	
 /*.link--underlined
 	position relative
@@ -422,7 +443,7 @@ a
 		margin-bottom 35px
 		
 	&--more
-		margin-top 24px
+		margin-top 27px
 
 .block__paragraph
 	width 750px
@@ -430,6 +451,9 @@ a
 	font-family Georgia, serif
 	font-size 26px
 	line-height 36px
+
+	&--about
+		width 800px
 	
 	&--wide
 		width 100%
