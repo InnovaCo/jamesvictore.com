@@ -467,7 +467,7 @@ a.disabled:before {
 }
 .image_block__title__comment {
 	margin-top: 25px;
-	margin-bottom: 10px;
+	margin-bottom: 22px;
 	display: block;
 	font-family: HelveticaNeue, sans-serif;
 	font-size: 11px;
@@ -479,11 +479,11 @@ a.disabled:before {
 .image_block__title__comment--bottom7 {
 	margin-bottom: 7px;
 }
-.image_block__title__comment--bottom15 {
-	margin-bottom: 15px;
+.image_block__title__comment--bq {
+	margin-bottom: 28px;
 }
-.image_block__title__comment--bottom40 {
-	margin-bottom: 40px;
+.image_block__title__comment--contacts {
+	margin-bottom: 54px;
 }
 .image_block__title__comment--top10 {
 	margin-top: 10px;
