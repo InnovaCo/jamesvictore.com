@@ -467,6 +467,7 @@ a.disabled:before {
 }
 .image_block__title__comment {
 	margin-top: 25px;
+	margin-bottom: 10px;
 	display: block;
 	font-family: HelveticaNeue, sans-serif;
 	font-size: 11px;
@@ -475,9 +476,31 @@ a.disabled:before {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+.image_block__title__comment--bottom7 {
+	margin-bottom: 7px;
+}
+.image_block__title__comment--bottom15 {
+	margin-bottom: 15px;
+}
+.image_block__title__comment--bottom40 {
+	margin-bottom: 40px;
+}
 .image_block__title__comment--top10 {
 	margin-top: 10px;
 	margin-bottom: 15px;
+}
+.image_block__title__text {
+	margin-left: -11px;
+	display: block;
+}
+.image_block__title__text--left2 {
+	margin-left: -2px;
+}
+.image_block__title__text--left21 {
+	margin-left: -21px;
+}
+.image_block__title__text--no-margin {
+	margin-left: 0;
 }
 .gradient_block {
 	padding-top: 40px;
