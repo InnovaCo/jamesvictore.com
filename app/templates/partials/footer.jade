@@ -3,8 +3,7 @@ if current == 'subscribe'
 	.footer.footer--green
 		ul.wrapper--1000
 			li.footer__link.footer__link--white
-				span.link-wrapper.link-wrapper--white
-					a.link-wrapper__link.link-wrapper__link--white(href='mailto:james@jamesvictore.com') james@jamesvictore.com
+				a.link--white(href='mailto:james@jamesvictore.com') james@jamesvictore.com
 				
 			li.footer__link.footer__link--white open 23 hours
 
@@ -15,14 +14,12 @@ else if current == 'contact'
 	.footer.footer--violet
 		ul.wrapper--1000
 			li.footer__link.footer__link--white
-				span.link-wrapper.link-wrapper--white
-					a.link-wrapper__link.link-wrapper__link--white(href='mailto:james@jamesvictore.com') james@jamesvictore.com
+				a.link--white(href='mailto:james@jamesvictore.com') james@jamesvictore.com
 				
 			li.footer__link open 23 hours
 			
 			li.footer__link
-				span.link-wrapper.link-wrapper--white
-					a.link-wrapper__link.link-wrapper__link--white(href='subscribe.html') Subscribe to our newsletter
+				a.link--white(href='subscribe.html') Subscribe to our newsletter
 				
 			block footer
 			li.footer__link.footer__link--last!= sentence
@@ -31,14 +28,12 @@ else
 		ul.wrapper--1000
 		
 			li.footer__link
-				span.link-wrapper
-					a.link-wrapper__link(href='mailto:james@jamesvictore.com') james@jamesvictore.com
+				a(href='mailto:james@jamesvictore.com') james@jamesvictore.com
 				
 			li.footer__link open 23 hours
 			
 			li.footer__link
-				span.link-wrapper
-					a.link-wrapper__link(href='subscribe.html') Subscribe to our newsletter
+				a(href='subscribe.html') Subscribe to our newsletter
 
 			block footer
 			li.footer__link.footer__link--last!= sentence

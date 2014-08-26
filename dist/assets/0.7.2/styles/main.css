@@ -185,48 +185,11 @@ body {
 a {
 	position: relative;
 	z-index: 1;
-	text-decoration: none;
+	text-decoration: underline;
 	color: #f128c1;
-}
-.link-wrapper {
-	position: relative;
-	top: -.2rem;
-	border-bottom: 3px solid #f128c1;
-}
-.link-wrapper--white {
-	border-color: #fff;
-}
-.link-wrapper--block {
-	top: -.1rem;
-}
-.link-wrapper--narrow {
-	top: -.1rem;
-}
-.link-wrapper--zero {
-	top: 0;
-}
-.link-wrapper__link {
-	position: relative;
-	top: .2rem;
-}
-.link-wrapper__link--block {
-	top: -.3rem;
-}
-.link-wrapper__link--narrow {
-	top: .1rem;
-}
-.link-wrapper__link--zero {
-	top: 0;
-}
-.link-wrapper__link--white {
-	color: #fff;
 }
 .link--white {
 	color: #fff;
-	border-color: #fff;
-}
-.link--white:before {
-	border-color: #fff;
 }
 .main {
 	margin-right: auto;
@@ -606,7 +569,6 @@ a {
 	font-size: 30px;
 	line-height: 31px;
 	text-align: left;
-	text-decoration: none;
 	text-transform: uppercase;
 }
 .block__link--white {
@@ -827,16 +789,6 @@ a {
 	margin-top: 9px;
 	margin-bottom: 7px;
 	width: 220px;
-}
-.blurred {
-	-webkit-transform: translate3d(0, 0, 0);
-	        transform: translate3d(0, 0, 0);
-
-	-webkit-filter: blur(5px);
-	        filter: blur(5px);
-	   -moz-filter: blur(5px);
-	     -o-filter: blur(5px);
-	    -ms-filter: blur(5px);
 }
 .shadowed {
 	position: absolute;
