@@ -75,7 +75,7 @@ block content
 		img.image_block__image(src=page.assets + 'images/about2.jpg', alt='More photos', width='1400', height='650')
 
 		.wrapper--absolute
-			a.block__link.block__link--more..link--white.link--preview(href='javascript:void(0);') more photos and work in high quality
+			a.block__link.block__link--more.link--white.link--preview(href='javascript:void(0);') more photos and work in high quality
 			
 	.block
 		.block__paragraph 
@@ -192,3 +192,8 @@ block content
 		
 block footer
 	- var sentence = 'Warrior not worrier';
+
+block scripts
+	+script([
+		'img-anim.js'
+	])
