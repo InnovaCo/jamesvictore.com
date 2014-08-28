@@ -4,7 +4,9 @@ include ../helpers/mixins
 doctype html
 html(lang='ru')
 	include head
-	body
+
+	block header
+	body(class=current == 'subscribe' ? 'subscribe' : '')
 		.main
 			include header
 			block content
