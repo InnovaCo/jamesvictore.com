@@ -898,6 +898,7 @@ a:hover {
 }
 #livepreview_dialog {
 	position: absolute;
+	z-index: 1000;
 	padding: 0;
 	width: 305px;
 	height: 205px;
