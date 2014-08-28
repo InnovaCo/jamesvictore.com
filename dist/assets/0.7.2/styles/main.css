@@ -985,6 +985,9 @@ a {
 	background: #000;
 	border: none;
 }
+.menu__button:hover {
+	color: #7acf74;
+}
 .menu__button--pink {
 	padding-right: 12px;
 	padding-left: 12px;
@@ -994,6 +997,9 @@ a {
 	background-image: -webkit-linear-gradient(left, #f07673 0%, #ff83bb 30%, #fd43a4 100%);
 	background-image:      -o-linear-gradient(left, #f07673 0%, #ff83bb 30%, #fd43a4 100%);
 	background-image:         linear-gradient(to right, #f07673 0%, #ff83bb 30%, #fd43a4 100%);
+}
+.menu__button--pink:hover {
+	color: #000;
 }
 .menu__button--pink:before {
 	position: absolute;
