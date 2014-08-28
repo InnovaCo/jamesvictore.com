@@ -196,6 +196,9 @@ a {
 	text-decoration: underline;
 	color: #f128c1;
 }
+a:hover {
+	text-decoration: none;
+}
 .link--white {
 	color: #fff;
 }
