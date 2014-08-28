@@ -151,13 +151,19 @@ a
 	text-transform uppercase
 	color transparent
 	text-indent -999px
-	border 1px solid #fff
+	border none
 	background url(../images/subscribe.png) 0 0 no-repeat
 	background-size cover
+
+	&:hover
+		background-position 0 -50px
 
 	@media only screen and (-webkit-min-device-pixel-ratio: 2)
 		background url(../images/subscribe@2.png) 0 0 no-repeat
 		background-size cover
+
+		&:hover
+			background-position 0 -100px
 
 .description
 	margin-bottom 40px

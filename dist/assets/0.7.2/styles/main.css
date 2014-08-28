@@ -338,12 +338,18 @@ a:hover {
 	color: transparent;
 	background: url('../images/subscribe.png') 0 0 no-repeat;
 	background-size: cover;
-	border: 1px solid #fff;
+	border: none;
+}
+.submit:hover {
+	background-position: 0 -50px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	.submit {
 		background: url('../images/subscribe@2.png') 0 0 no-repeat;
 		background-size: cover;
+	}
+	.submit:hover {
+		background-position: 0 -100px;
 	}
 }
 .description {
