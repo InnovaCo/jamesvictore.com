@@ -815,6 +815,9 @@ a:hover {
 	float: right;
 	width: 215px;
 }
+.block__events--lab {
+	margin-top: 0;
+}
 .block__events--past {
 	margin-top: 30px;
 }
@@ -868,8 +871,11 @@ a:hover {
 .block__events__text-item {
 	margin-bottom: 15px;
 }
+.block__events__text-item--last {
+	margin-bottom: 6px;
+}
 .block__events__text-item--contacts {
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 }
 .block__events__text-item--contacts-last {
 	margin-top: 12px;
