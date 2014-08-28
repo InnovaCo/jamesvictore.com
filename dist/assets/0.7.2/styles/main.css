@@ -202,6 +202,28 @@ a:hover {
 .link--white {
 	color: #fff;
 }
+.link--dashed {
+	text-decoration: none;
+	border-bottom: 3px dashed #f128c1;
+}
+.link--image-container {
+	position: relative;
+}
+.about-image-link__image {
+	position: absolute;
+	display: none;
+}
+.about-image-link:hover > .about-image-link__image {
+	display: block;
+}
+.about-image-link__image--models {
+	top: 0;
+	right: -377px;
+}
+.about-image-link__image--luca {
+	top: -185px;
+	right: -447px;
+}
 .main {
 	margin-right: auto;
 	margin-left: auto;

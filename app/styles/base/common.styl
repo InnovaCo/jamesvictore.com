@@ -24,7 +24,30 @@ a
 
 .link--white
 	color #fff
-	
+
+.link--dashed
+	text-decoration none
+	border-bottom 3px dashed #F128C1
+
+.link--image-container
+	position relative
+
+.about-image-link
+	&__image
+		position absolute
+		display none
+
+		.about-image-link:hover > &
+			display block
+
+		&--models
+			top 0
+			right -377px
+
+		&--luca
+			top -185px
+			right -447px
+
 .main
 	margin-left auto
 	margin-right auto
