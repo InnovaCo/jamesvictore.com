@@ -406,6 +406,9 @@ a:hover {
 .image_block__background--event {
 	background: url('../images/event.jpg') center top repeat-x;
 }
+.image_block__background--speaking {
+	background: url('../images/speaking.jpg') center top repeat-x;
+}
 .image_block--contact__gradient {
 	position: absolute;
 	z-index: 50;
