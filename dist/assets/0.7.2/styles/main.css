@@ -533,6 +533,7 @@ a:hover {
 	margin-left: 0;
 }
 .image_block__title__text--lab {
+	padding-left: 3px;
 	letter-spacing: -3px;
 }
 .image_block__ds-img {
