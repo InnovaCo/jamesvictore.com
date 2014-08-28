@@ -54,8 +54,20 @@
 	color #000
 	border none
 
+	&:hover
+		text-decoration underline
+
 	&--contact
 		margin-right 20px
 
 	&--social
 		margin-left 3px
+
+		&:after
+			display inline-block
+			content '/'
+			margin-left 3px
+			margin-right 1px
+
+		&--last:after
+			display none
