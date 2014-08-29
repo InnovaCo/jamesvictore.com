@@ -20,4 +20,10 @@ $(function() {
 		videoResize($videoBlock);
 	});
 
+	// ios titles
+
+	if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+		$('h1').addClass('ios-title');
+	}
+
 });

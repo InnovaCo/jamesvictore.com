@@ -291,6 +291,10 @@ a:hover {
 	line-height: 158px;
 	text-align: left;
 }
+.h1.ios-title {
+	font-size: 150px;
+	line-height: 130px;
+}
 .h2 {
 	margin-bottom: 16px;
 	font-size: 54px;
