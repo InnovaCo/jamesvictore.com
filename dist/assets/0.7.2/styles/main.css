@@ -1045,7 +1045,7 @@ a:hover {
 	border: none;
 }
 .menu__button:hover {
-	color: #7acf74;
+	background-color: #f128c1;
 }
 .menu__button--pink {
 	padding-right: 12px;
