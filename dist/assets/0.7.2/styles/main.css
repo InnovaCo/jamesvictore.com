@@ -430,6 +430,8 @@ a:hover {
 	background: url('../images/lab.jpg') center top repeat-x;
 }
 .image_block__background--bq {
+	padding-right: 100%;
+	padding-left: 34px;
 	background: url('../images/watch.jpg') center top repeat-x;
 }
 .image_block__background--about {
