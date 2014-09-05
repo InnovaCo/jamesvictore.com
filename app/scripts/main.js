@@ -26,4 +26,15 @@ $(function() {
 		$('h1').addClass('ios-title');
 	}
 
+	var isMac = navigator.platform.match(/Mac/i);
+
+	if (isMac) {
+		var test = parseInt($('#testblock').css('line-height')),
+			after = ((test / 100) * 19);
+
+		$('#testblock').css({
+			'padding-top': after
+		});
+	}
+
 });
