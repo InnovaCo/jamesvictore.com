@@ -430,6 +430,8 @@ a:hover {
 	background: url('../images/lab.jpg') center top repeat-x;
 }
 .image_block__background--bq {
+	padding-right: 100%;
+	padding-left: 34px;
 	background: url('../images/watch.jpg') center top repeat-x;
 }
 .image_block__background--about {
@@ -478,6 +480,11 @@ a:hover {
 	margin-left: -500px;
 	width: 1000px;
 	color: #fff;
+}
+.image_block__title--home {
+	top: 30px;
+	font-size: 185px;
+	letter-spacing: -2px;
 }
 .image_block__title--contact {
 	z-index: 100;
@@ -664,7 +671,6 @@ a:hover {
 }
 .block__link--lab-spaced {
 	margin-top: 25px;
-	margin-bottom: 68px;
 }
 .block__paragraph {
 	float: left;
@@ -1039,7 +1045,7 @@ a:hover {
 	border: none;
 }
 .menu__button:hover {
-	color: #7acf74;
+	background-color: #f128c1;
 }
 .menu__button--pink {
 	padding-right: 12px;

@@ -61,5 +61,5 @@ jQuery(function($){
         }
     }
 
-    setInterval(updateGradient,10);
+    setInterval(updateGradient,6.67);
 });
