@@ -205,6 +205,10 @@ p {
 	background-image:      -o-linear-gradient(transparent, transparent);
 	background-image:         linear-gradient(transparent, transparent);
 }
+.link--onmain,
+.link--onabout {
+	white-space: nowrap;
+}
 .link--default,
 .link--footer {
 	position: relative;
