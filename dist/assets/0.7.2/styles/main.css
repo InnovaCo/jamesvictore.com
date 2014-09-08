@@ -600,9 +600,9 @@ a:hover {
 	color: #fff;
 }
 .image_block__title--home {
-	top: 30px;
-	font-size: 185px;
-	letter-spacing: -2px;
+	top: 55px;
+	font-size: 180px;
+	letter-spacing: 2px;
 }
 .image_block__title--contact {
 	z-index: 100;
