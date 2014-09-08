@@ -196,19 +196,108 @@ a {
 	z-index: 1;
 	text-decoration: none;
 	color: #f128c1;
-	border-bottom: 3px solid #f128c1;
 }
 a:hover {
 	text-decoration: none;
 }
+.link--default,
+.link--footer {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+}
+.link--default:after,
+.link--footer:after {
+	border-bottom: 3px solid #f128c1;
+}
 .link--white {
+	position: relative;
+	display: inline-block;
 	text-decoration: none;
 	color: #fff;
+}
+.link--white:after {
 	border-bottom: 3px solid #fff;
 }
 .link--dashed {
+	position: relative;
+	display: inline-block;
 	text-decoration: none;
+}
+.link--dashed:after {
 	border-bottom: 3px dashed #f128c1;
+}
+.link--underline {
+	text-decoration: underline;
+}
+.link--underline:hover {
+	text-decoration: none;
+}
+.link--default:after,
+.link--white:after,
+.link--dashed:after,
+.link--footer:after {
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 1px;
+	content: '';
+}
+.link--default:hover:after,
+.link--white:hover:after,
+.link--dashed:hover:after,
+.link--footer:hover:after {
+	display: none;
+}
+.link--multiline:hover .link--default:after,
+.link--multiline:hover .link--white:after,
+.link--multiline:hover .link--dashed:after,
+.link--multiline:hover .link--footer:after {
+	display: none;
+}
+.footer__link .link--white:after {
+	bottom: -6px;
+}
+.webkit .link--footer:after {
+	bottom: -4px;
+}
+.mac .link--default:after,
+.android .link--default:after,
+.mac .link--white:after,
+.android .link--white:after,
+.mac .link--dashed:after,
+.android .link--dashed:after {
+	bottom: 1px;
+}
+.mac .link--footer:after,
+.android .link--footer:after {
+	bottom: -3px;
+}
+.mac .footer__link .link--white:after,
+.android .footer__link .link--white:after {
+	bottom: -3px;
+}
+.mac .link--tiny:after,
+.android .link--tiny:after {
+	bottom: -3px;
+}
+.mac.webkit .link--default:after,
+.android.webkit .link--default:after,
+.mac.webkit .link--white:after,
+.android.webkit .link--white:after,
+.mac.webkit .link--dashed:after,
+.android.webkit .link--dashed:after {
+	bottom: 2px;
+}
+.mac.webkit .link--tiny:after,
+.android.webkit .link--tiny:after {
+	bottom: -2px;
+}
+.mac.webkit .footer__link .link--white:after,
+.android.webkit .footer__link .link--white:after {
+	bottom: -3px;
 }
 .link--image-container {
 	position: relative;
@@ -383,6 +472,10 @@ a:hover {
 	padding-top: 21px;
 	padding-bottom: 21px;
 	width: 1000px;
+	-webkit-text-size-adjust: 100%;
+	background-image: -webkit-linear-gradient(transparent, transparent);
+	background-image:      -o-linear-gradient(transparent, transparent);
+	background-image:         linear-gradient(transparent, transparent);
 }
 .block--top {
 	padding-top: 6px;
@@ -1037,6 +1130,10 @@ a:hover {
 	width: 100%;
 	font-family: HelveticaNeueLTBold, sans-sefif;
 	font-size: 16px;
+	-webkit-text-size-adjust: 100%;
+	background-image: -webkit-linear-gradient(transparent, transparent);
+	background-image:      -o-linear-gradient(transparent, transparent);
+	background-image:         linear-gradient(transparent, transparent);
 }
 .footer--green {
 	background-color: #00bea3;

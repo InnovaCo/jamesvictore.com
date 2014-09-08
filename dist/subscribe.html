@@ -36,6 +36,23 @@
 		<meta name="reply-to" content="production@csssr.com">
 		<link href="favicon.ico" rel="shortcut icon">
 		<link href="assets/0.7.2/styles/main.css" rel="stylesheet">
+		<script>
+		(function()
+		{
+			var ua = navigator.userAgent.toLowerCase(),
+				mac = /mac/i.test(ua),
+				android = /android/i.test(ua),
+				chrome = /chrome/i.test(ua),
+				safari = (!(/chrome/i.test(ua)) && /webkit|safari|khtml/i.test(ua));
+			var html = document.getElementsByTagName('html')[0];
+			html.className = (html.className || '') +
+				(mac ? ' mac' : '') +
+				(android ? ' android' : '') +
+				(chrome || safari ? ' webkit' : '') +
+				(chrome ? ' chrome' : '') +
+				(safari ? ' safari' : '');
+		})();
+		</script>
 	</head>
 	<body class="subscribe">
 		<div class="main">
@@ -44,7 +61,7 @@
 					<div class="logo--small"></div>
 					<div class="menu"><a href="javascript:void(0);" class="menu__button">Menu</a><a href="javascript:void(0);" class="menu__button menu__button--pink"> Life</a>
 					</div>
-					<div class="contacts"><a href="subscribe.html" class="contacts__link">Subscribe</a><a href="contacts.html" class="contacts__link contacts__link--contact">Contact</a><a href="https://twitter.com/JamesVictore" class="contacts__link contacts__link--social">TW</a><a href="https://www.facebook.com/james.victore.37?fref=ts"
+					<div class="contacts"><a href="subscribe.html" class="contacts__link">Subscribe</a><a href="contact.html" class="contacts__link contacts__link--contact">Contact</a><a href="https://twitter.com/JamesVictore" class="contacts__link contacts__link--social">TW</a><a href="https://www.facebook.com/james.victore.37?fref=ts"
 						class="contacts__link contacts__link--social">FB</a><a href="http://instagram.com/jamesvictore" class="contacts__link contacts__link--social contacts__link--social--last">IG</a>
 					</div>
 				</div>

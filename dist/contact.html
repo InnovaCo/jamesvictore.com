@@ -13,7 +13,7 @@
 		<link sizes="120x120" href="assets/0.7.2/images/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon">
 		<link sizes="144x144" href="assets/0.7.2/images/icons/apple-touch-icon-144x144.png" rel="apple-touch-icon">
 		<link sizes="152x152" href="assets/0.7.2/images/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon">
-		<meta name="application-name" content="Burning questions">
+		<meta name="application-name" content="CSSSR Project Template">
 		<meta name="msapplication-tooltip" content="A template for a quick start.">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="assets/0.7.2/images/icons/tile.png">
@@ -36,6 +36,23 @@
 		<meta name="reply-to" content="production@csssr.com">
 		<link href="favicon.ico" rel="shortcut icon">
 		<link href="assets/0.7.2/styles/main.css" rel="stylesheet">
+		<script>
+		(function()
+		{
+			var ua = navigator.userAgent.toLowerCase(),
+				mac = /mac/i.test(ua),
+				android = /android/i.test(ua),
+				chrome = /chrome/i.test(ua),
+				safari = (!(/chrome/i.test(ua)) && /webkit|safari|khtml/i.test(ua));
+			var html = document.getElementsByTagName('html')[0];
+			html.className = (html.className || '') +
+				(mac ? ' mac' : '') +
+				(android ? ' android' : '') +
+				(chrome || safari ? ' webkit' : '') +
+				(chrome ? ' chrome' : '') +
+				(safari ? ' safari' : '');
+		})();
+		</script>
 	</head>
 	<body>
 		<div class="main">
@@ -44,7 +61,7 @@
 					<div class="logo--small"></div>
 					<div class="menu"><a href="javascript:void(0);" class="menu__button">Menu</a><a href="javascript:void(0);" class="menu__button menu__button--pink"> Life</a>
 					</div>
-					<div class="contacts"><a href="subscribe.html" class="contacts__link">Subscribe</a><a href="contacts.html" class="contacts__link contacts__link--contact">Contact</a><a href="https://twitter.com/JamesVictore" class="contacts__link contacts__link--social">TW</a><a href="https://www.facebook.com/james.victore.37?fref=ts"
+					<div class="contacts"><a href="subscribe.html" class="contacts__link">Subscribe</a><a href="contact.html" class="contacts__link contacts__link--contact">Contact</a><a href="https://twitter.com/JamesVictore" class="contacts__link contacts__link--social">TW</a><a href="https://www.facebook.com/james.victore.37?fref=ts"
 						class="contacts__link contacts__link--social">FB</a><a href="http://instagram.com/jamesvictore" class="contacts__link contacts__link--social contacts__link--social--last">IG</a>
 					</div>
 				</div>
@@ -66,7 +83,7 @@
 						<p class="text text--contacts">718.963.1690
 							<br>36 S 4th st. #D3
 							<br>Brooklyn, NY 11249</p>
-						<p class="text text--contacts">Follow: <a href="http://instagram.com/jamesvictore/" class="link--white">instagram</a>, <a href="https://twitter.com/JamesVictore" class="link--white">twitter</a>, <a href="https://www.facebook.com/james.victore.37?fref=ts" class="link--white">facebook</a>
+						<p class="text text--contacts">Follow: <a href="http://instagram.com/jamesvictore/" class="link--white link--tiny">instagram</a>, <a href="https://twitter.com/JamesVictore" class="link--white link--tiny">twitter</a>, <a href="https://www.facebook.com/james.victore.37?fref=ts" class="link--white link--tiny">facebook</a>
 						</p>
 						<div class="wrapper--padding36">
 							<p class="text text--bold"><a href="mailto:james@jamesvictore.com" class="link--white link--contacts">Book James to speak</a>
@@ -81,7 +98,7 @@
 							</p>
 							<p class="text text--bold"><a href="http://www.youtube.com/user/JamesVictore" class="link--white">Watch Burning Questions</a>
 							</p>
-							<p class="text text--bold"><a href="javascript:void(0);" class="link--white">Shop for books, posters, and art originals</a>
+							<p class="text text--bold"><a href="javascript:void(0);" class="link--multiline"><span class="link--white">Shop for books, posters, and art&nbsp;</span><span class="link--white">originals</span></a>
 							</p>
 							<p class="text text--bold"><a href="subscribe.html" class="link--white">Subscribe for email updates</a>
 							</p>
@@ -92,13 +109,13 @@
 							<div class="block__paragraph__title">HIRE US FOR DESIGN WORK</div>
 							<p class="text">We are an independent design studio that creates sexy, strong, memorable work for brave clients. We want to work with people and companies who believe that the status quo is not enough, that good work matters, and that design can be a tool to affect
 								opinions and culture. Some of this work even makes it into the MoMA. In the past we’ve worked our magic with MailChimp, Adobe, Esquire Magazine, The New York Times, Moet & Chandon, Yohji Yamamoto, Bobbi Brown, Aveda, The School of Visual Arts,
-								and many others. Drop us a line at <a href="mailto:james@jamesvictore.com" class="link--white">james@jamesvictore.com</a>.</p>
+								and many others. Drop us a line at <a href="mailto:james@jamesvictore.com" class="link--white link--tiny">james@jamesvictore.com</a>.</p>
 						</div>
 						<div class="column column--narrow column--narrow column--left">
 							<div class="block__paragraph block__paragraph--narrow">
 								<div class="block__paragraph__title">INDIVIDUAL CONSULTATION</div>
 								<p class="text">Interested in a 1 on 1 professional development consultation with James? We offer a small number of in-person and/or skype sessions each month for VIP design direction and creative brainstorming. A one hour session with James is $500. Please inquire
-									at <a href="mailto:james@jamesvictore.com" class="link--white">james@james victore.com</a>&nbsp;for more information and booking.</p>
+									at <a href="mailto:james@jamesvictore.com" class="link--multiline"><span class="link--white link--tiny">james@james</span><span class="link--white link--tiny">victore.com</span></a>&nbsp;for more information and booking.</p>
 							</div>
 						</div>
 						<div class="column column--narrow">
@@ -106,7 +123,7 @@
 								<div class="block__paragraph__title">STUDIO VISITS</div>
 								<p class="text">In order to safeguard our sanity, we no longer permit studio visits, however we do have one night every month dedicated to visiting, sharing, and reveling in each others’ company. It’s open to everyone and it’s called “Victore After Hours”. Check
 									<a
-									href="https://twitter.com/JamesVictore" class="link--white">twitter</a>&nbsp;and <a href="http://instagram.com/jamesvictore/" class="link--white">instagram</a>&nbsp;for the next engagement.</p>
+									href="https://twitter.com/JamesVictore" class="link--white link--tiny">twitter</a>&nbsp;and <a href="http://instagram.com/jamesvictore/" class="link--white link--tiny">instagram</a>&nbsp;for the next engagement.</p>
 							</div>
 						</div>
 					</div>

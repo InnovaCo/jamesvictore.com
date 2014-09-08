@@ -36,6 +36,23 @@
 		<meta name="reply-to" content="production@csssr.com">
 		<link href="favicon.ico" rel="shortcut icon">
 		<link href="assets/0.7.2/styles/main.css" rel="stylesheet">
+		<script>
+		(function()
+		{
+			var ua = navigator.userAgent.toLowerCase(),
+				mac = /mac/i.test(ua),
+				android = /android/i.test(ua),
+				chrome = /chrome/i.test(ua),
+				safari = (!(/chrome/i.test(ua)) && /webkit|safari|khtml/i.test(ua));
+			var html = document.getElementsByTagName('html')[0];
+			html.className = (html.className || '') +
+				(mac ? ' mac' : '') +
+				(android ? ' android' : '') +
+				(chrome || safari ? ' webkit' : '') +
+				(chrome ? ' chrome' : '') +
+				(safari ? ' safari' : '');
+		})();
+		</script>
 	</head>
 	<body>
 		<div class="main">
@@ -44,7 +61,7 @@
 					<div class="logo--small"></div>
 					<div class="menu"><a href="javascript:void(0);" class="menu__button">Menu</a><a href="javascript:void(0);" class="menu__button menu__button--pink"> Life</a>
 					</div>
-					<div class="contacts"><a href="subscribe.html" class="contacts__link">Subscribe</a><a href="contacts.html" class="contacts__link contacts__link--contact">Contact</a><a href="https://twitter.com/JamesVictore" class="contacts__link contacts__link--social">TW</a><a href="https://www.facebook.com/james.victore.37?fref=ts"
+					<div class="contacts"><a href="subscribe.html" class="contacts__link">Subscribe</a><a href="contact.html" class="contacts__link contacts__link--contact">Contact</a><a href="https://twitter.com/JamesVictore" class="contacts__link contacts__link--social">TW</a><a href="https://www.facebook.com/james.victore.37?fref=ts"
 						class="contacts__link contacts__link--social">FB</a><a href="http://instagram.com/jamesvictore" class="contacts__link contacts__link--social contacts__link--social--last">IG</a>
 					</div>
 				</div>
@@ -104,7 +121,7 @@
 					<p class="text">As a studio, we are keenly aware of the liberating power of breaking bread, engaging in good conversation, and encouraging the expansion of our circle of friends. During the Dinner Series this is exactly what we try to emulate for our guests. We
 						all take a moment to dress it up, meet an amazing stranger, and delight in the blissful sensory experience of really fresh, really good food. Oh, and don’t forget the bubbly.</p>
 					<p class="text">There is something magical that happens when we step outside of the studio and into the realm of the muse (i.e.. Dinner). Our shoulders relax, our laughter comes out of hiding, jokes and stories start getting told, and all of the sudden – Bam! We
-						free ourselves up to ground-breaking genius.</p><a href="subscribe.html" class="block__link">Join the mailing list for Dinner 2015</a>
+						free ourselves up to ground-breaking genius.</p><a href="subscribe.html" class="block__link link--default">Join the mailing list for Dinner 2015</a>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -143,10 +160,10 @@
 			</div>
 			<div class="footer">
 				<ul class="wrapper--1000">
-					<li class="footer__link"><a href="mailto:james@jamesvictore.com">james@jamesvictore.com</a>
+					<li class="footer__link"><a href="mailto:james@jamesvictore.com" class="link--footer">james@jamesvictore.com</a>
 					</li>
 					<li class="footer__link">open 23 hours</li>
-					<li class="footer__link"><a href="subscribe.html">Subscribe to our newsletter</a>
+					<li class="footer__link"><a href="subscribe.html" class="link--footer">Subscribe to our newsletter</a>
 					</li>
 					<li class="footer__link footer__link--last">There ain’t no rules</li>
 				</ul>

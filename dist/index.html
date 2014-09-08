@@ -36,6 +36,23 @@
 		<meta name="reply-to" content="production@csssr.com">
 		<link href="favicon.ico" rel="shortcut icon">
 		<link href="assets/0.7.2/styles/main.css" rel="stylesheet">
+		<script>
+		(function()
+		{
+			var ua = navigator.userAgent.toLowerCase(),
+				mac = /mac/i.test(ua),
+				android = /android/i.test(ua),
+				chrome = /chrome/i.test(ua),
+				safari = (!(/chrome/i.test(ua)) && /webkit|safari|khtml/i.test(ua));
+			var html = document.getElementsByTagName('html')[0];
+			html.className = (html.className || '') +
+				(mac ? ' mac' : '') +
+				(android ? ' android' : '') +
+				(chrome || safari ? ' webkit' : '') +
+				(chrome ? ' chrome' : '') +
+				(safari ? ' safari' : '');
+		})();
+		</script>
 	</head>
 	<body>
 		<div class="main">
@@ -44,30 +61,30 @@
 					<div class="logo--small"></div>
 					<div class="menu"><a href="javascript:void(0);" class="menu__button">Menu</a><a href="javascript:void(0);" class="menu__button menu__button--pink"> Life</a>
 					</div>
-					<div class="contacts"><a href="subscribe.html" class="contacts__link">Subscribe</a><a href="contacts.html" class="contacts__link contacts__link--contact">Contact</a><a href="https://twitter.com/JamesVictore" class="contacts__link contacts__link--social">TW</a><a href="https://www.facebook.com/james.victore.37?fref=ts"
+					<div class="contacts"><a href="subscribe.html" class="contacts__link">Subscribe</a><a href="contact.html" class="contacts__link contacts__link--contact">Contact</a><a href="https://twitter.com/JamesVictore" class="contacts__link contacts__link--social">TW</a><a href="https://www.facebook.com/james.victore.37?fref=ts"
 						class="contacts__link contacts__link--social">FB</a><a href="http://instagram.com/jamesvictore" class="contacts__link contacts__link--social contacts__link--social--last">IG</a>
 					</div>
 				</div>
 			</div>
 			<div class="block">
-				<div class="wrapper--1000"><a href="home.html" target="_blank" class="block__link">Home</a>
-					<br><a href="speaking.html" target="_blank" class="block__link">Hire james to speak</a>
-					<br><a href="couragefaithandcocktails.html" target="_blank" class="block__link">Courage, faith + cocktails</a>
-					<br><a href="takethisjob.html" target="_blank" class="block__link">One Day Event</a>
-					<br><a href="onlineclass.html" target="_blank" class="block__link">Take a class online</a>
-					<br><a href="burningquestions.html" target="_blank" class="block__link">Burning questions</a>
-					<br><a href="subscribe.html" target="_blank" class="block__link">Our awesome newsletter</a>
-					<br><a href="about.html" target="_blank" class="block__link">About the studio</a>
-					<br><a href="lab.html" target="_blank" class="block__link">Lab</a>
-					<br><a href="contact.html" target="_blank" class="block__link">Contacts</a>
+				<div class="wrapper--1000"><a href="home.html" target="_blank" class="block__link link--default">Home</a>
+					<br><a href="speaking.html" target="_blank" class="block__link link--default">Hire james to speak</a>
+					<br><a href="couragefaithandcocktails.html" target="_blank" class="block__link link--default">Courage, faith + cocktails</a>
+					<br><a href="takethisjob.html" target="_blank" class="block__link link--default">One Day Event</a>
+					<br><a href="onlineclass.html" target="_blank" class="block__link link--default">Take a class online</a>
+					<br><a href="burningquestions.html" target="_blank" class="block__link link--default">Burning questions</a>
+					<br><a href="subscribe.html" target="_blank" class="block__link link--default">Our awesome newsletter</a>
+					<br><a href="about.html" target="_blank" class="block__link link--default">About the studio</a>
+					<br><a href="lab.html" target="_blank" class="block__link link--default">Lab</a>
+					<br><a href="contact.html" target="_blank" class="block__link link--default">Contacts</a>
 				</div>
 			</div>
 			<div class="footer">
 				<ul class="wrapper--1000">
-					<li class="footer__link"><a href="mailto:james@jamesvictore.com">james@jamesvictore.com</a>
+					<li class="footer__link"><a href="mailto:james@jamesvictore.com" class="link--footer">james@jamesvictore.com</a>
 					</li>
 					<li class="footer__link">open 23 hours</li>
-					<li class="footer__link"><a href="subscribe.html">Subscribe to our newsletter</a>
+					<li class="footer__link"><a href="subscribe.html" class="link--footer">Subscribe to our newsletter</a>
 					</li>
 					<li class="footer__link footer__link--last"></li>
 				</ul>

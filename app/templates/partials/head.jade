@@ -53,3 +53,21 @@ head
 
 	link(href='favicon.ico' rel='shortcut icon')
 	link(href=page.assets + 'styles/main.css' rel='stylesheet')
+	
+	script.
+		(function() {
+			var ua = navigator.userAgent.toLowerCase(),
+				mac = /mac/i.test(ua),
+				android = /android/i.test(ua),
+				chrome = /chrome/i.test(ua),
+				safari = (!(/chrome/i.test(ua)) && /webkit|safari|khtml/i.test(ua));
+			
+			var html = document.getElementsByTagName('html')[0];
+			html.className = (html.className || '') + 
+				(mac ? ' mac' : '') + 
+				(android ? ' android' : '') + 
+				(chrome || safari ? ' webkit' : '') +
+				(chrome ? ' chrome' : '') + 
+				(safari ? ' safari' : '');
+			
+		})();

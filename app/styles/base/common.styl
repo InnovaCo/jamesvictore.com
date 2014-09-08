@@ -19,20 +19,108 @@ a
 	z-index 1
 	text-decoration none
 	color #F128C1
-	border-bottom 3px solid #f128c1
 
 	&:hover
 		text-decoration none
-
+	
+.link--default
+.link--footer
+	display inline-block
+	position relative
+	text-decoration none
+	
+	&:after
+		border-bottom 3px solid #f128c1
+		
 .link--white
+	display inline-block
+	position relative
 	text-decoration none
 	color #fff
-	border-bottom 3px solid #fff
+	
+	&:after
+		border-bottom 3px solid #fff
 
 .link--dashed
+	display inline-block
+	position relative
 	text-decoration none
-	border-bottom 3px dashed #F128C1
+	
+	&:after
+		border-bottom 3px dashed #F128C1
 
+.link--underline
+	text-decoration underline
+	
+	&:hover
+		text-decoration none
+		
+.link--default:after
+.link--white:after
+.link--dashed:after
+.link--footer:after
+	position absolute
+	bottom -3px
+	left 0
+	display block
+	height 1px
+	width 100%
+	content ''
+
+.link--default:hover:after
+.link--white:hover:after
+.link--dashed:hover:after
+.link--footer:hover:after
+	display none
+
+.link--multiline:hover
+	.link--default:after
+	.link--white:after
+	.link--dashed:after
+	.link--footer:after
+		display none
+
+.footer__link
+	.link--white:after
+		bottom -6px
+
+.webkit
+	.link--footer:after
+		bottom -4px
+	
+.mac
+.android
+	.link--default:after
+	.link--white:after
+	.link--dashed:after
+		bottom: 1px
+		
+	.link--footer:after
+		bottom -3px
+	
+	.footer__link
+		.link--white:after
+			bottom -3px
+	
+	.link--tiny:after
+		bottom -3px
+			
+	&.webkit
+		.link--default:after
+		.link--white:after
+		.link--dashed:after
+			bottom: 2px
+	
+		.link--tiny:after
+			bottom -2px
+	
+		.footer__link
+			.link--white:after
+				bottom -3px
+				
+		
+			
+		
 .link--image-container
 	position relative
 
@@ -193,6 +281,8 @@ a
 	padding-bottom 21px
 	width 1000px
 	margin 0 auto
+	-webkit-text-size-adjust 100%
+	fix-text-size-adjust()
 	
 	&--top
 		padding-top 6px
