@@ -680,7 +680,6 @@ p {
 .image_block__title__text {
 	position: absolute;
 	top: 90px;
-	margin-left: -11px;
 	padding: 0;
 	display: block;
 }
@@ -755,7 +754,6 @@ p {
 	text-transform: uppercase;
 }
 .gradient_block__title__text {
-	margin-left: -11px;
 	padding: 0;
 	display: block;
 }
