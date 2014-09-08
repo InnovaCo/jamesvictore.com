@@ -1262,6 +1262,9 @@ p {
 .footer__link--last {
 	padding-right: 0;
 }
+.wrapper--1000 {
+	white-space: nowrap;
+}
 .menu {
 	float: left;
 	font-family: HelveticaNeue, sans-sefif;
