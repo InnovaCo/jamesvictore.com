@@ -1,6 +1,6 @@
 head
 	meta(charset='utf-8')
-	meta(name='viewport' content='width=1024, maximum-scale=1.0')
+	meta(name='viewport' content='width=1024')
 
 	//- iOS
 	meta(name='apple-mobile-web-app-capable' content='yes')
@@ -53,7 +53,7 @@ head
 
 	link(href='favicon.ico' rel='shortcut icon')
 	link(href=page.assets + 'styles/main.css' rel='stylesheet')
-	
+
 	script.
 		(function() {
 			var ua = navigator.userAgent.toLowerCase(),
@@ -63,14 +63,14 @@ head
 				safari = (!(/chrome/i.test(ua)) && /webkit|safari|khtml/i.test(ua)),
 				msie10 = (/msie 10/i.test(ua) && !/opera/i.test(ua)),
 				msie11 = !!ua.match(/trident.*rv[ :]*11\./);
-			
+
 			var html = document.getElementsByTagName('html')[0];
-			html.className = (html.className || '') + 
-				(mac ? ' mac' : '') + 
-				(android ? ' android' : '') + 
+			html.className = (html.className || '') +
+				(mac ? ' mac' : '') +
+				(android ? ' android' : '') +
 				(chrome || safari ? ' webkit' : '') +
-				(chrome ? ' chrome' : '') + 
-				(msie10 || msie11 ? ' ie' : '') + 
+				(chrome ? ' chrome' : '') +
+				(msie10 || msie11 ? ' ie' : '') +
 				(safari ? ' safari' : '');
-			
+
 		})();
