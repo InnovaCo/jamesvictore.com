@@ -30,6 +30,7 @@ $(function() {
 		notPC = navigator.platform.match(/Mac|Win/i),
 		$invisibleTitle = $('.js-title-invText'),
 		$invisibleTitleHome = $('.js-title-invText-home'),
+		$invisibleText = $('#text'),
 		$deviceImg = $('.js-device-img');
 
 	if (isMac) {
@@ -46,7 +47,7 @@ $(function() {
 
 	if (!notPC) {
 		$deviceImg.show();
-		$invisibleTitle.hide();
+		$invisibleText.hide();
 	}
 
 });

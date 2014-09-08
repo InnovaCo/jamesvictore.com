@@ -672,6 +672,9 @@ p {
 .image_block__title--contact {
 	z-index: 100;
 }
+.image_block__title--contact .image_block__title__text {
+	top: 105px;
+}
 .image_block__title--size154 {
 	font-size: 150px;
 	line-height: 140px;
