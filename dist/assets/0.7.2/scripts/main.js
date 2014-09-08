@@ -27,8 +27,10 @@ $(function() {
 	}
 
 	var isMac = navigator.platform.match(/Mac/i),
+		notPC = navigator.platform.match(/Mac|Win/i),
 		$invisibleTitle = $('.js-title-invText'),
-		$invisibleTitleHome = $('.js-title-invText-home');
+		$invisibleTitleHome = $('.js-title-invText-home'),
+		$deviceImg = $('.js-device-img');
 
 	if (isMac) {
 		var test = parseInt($invisibleTitle.css('line-height')),
@@ -40,6 +42,11 @@ $(function() {
 		$invisibleTitleHome.css({
 			'left': '-10px'
 		});
+	}
+
+	if (!notPC) {
+		$deviceImg.show();
+		$invisibleTitle.hide();
 	}
 
 });

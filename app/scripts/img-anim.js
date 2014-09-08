@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var $window = $(window),
-        $hiddable = $('#text, #shadow'),
+        $hiddable = $('#text, #shadow, .js-device-img'),
         opacity = 1,
         oldScroll = 0;
 
