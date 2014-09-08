@@ -60,7 +60,9 @@ head
 				mac = /mac/i.test(ua),
 				android = /android/i.test(ua),
 				chrome = /chrome/i.test(ua),
-				safari = (!(/chrome/i.test(ua)) && /webkit|safari|khtml/i.test(ua));
+				safari = (!(/chrome/i.test(ua)) && /webkit|safari|khtml/i.test(ua)),
+				msie10 = (/msie 10/i.test(ua) && !/opera/i.test(ua)),
+				msie11 = !!ua.match(/trident.*rv[ :]*11\./);
 			
 			var html = document.getElementsByTagName('html')[0];
 			html.className = (html.className || '') + 
@@ -68,6 +70,7 @@ head
 				(android ? ' android' : '') + 
 				(chrome || safari ? ' webkit' : '') +
 				(chrome ? ' chrome' : '') + 
+				(msie10 || msie11 ? ' ie' : '') + 
 				(safari ? ' safari' : '');
 			
 		})();
