@@ -1,7 +1,7 @@
 block header
 if current == 'subscribe'
 	.footer.footer--green
-		ul.wrapper--1000
+		ul.wrapper--1000.footer-wrapper
 			li.footer__link.footer__link--white
 				a.link--white(href='mailto:james@jamesvictore.com') james@jamesvictore.com
 				
@@ -12,7 +12,7 @@ if current == 'subscribe'
 			
 else if current == 'contact'
 	.footer.footer--violet
-		ul.wrapper--1000
+		ul.wrapper--1000.footer-wrapper
 			li.footer__link.footer__link--white
 				a.link--white(href='mailto:james@jamesvictore.com') james@jamesvictore.com
 				
@@ -25,7 +25,7 @@ else if current == 'contact'
 			li.footer__link.footer__link--last!= sentence
 else
 	.footer
-		ul.wrapper--1000
+		ul.wrapper--1000.footer-wrapper
 		
 			li.footer__link
 				a.link--footer(href='mailto:james@jamesvictore.com') james@jamesvictore.com
