@@ -20,20 +20,16 @@ $(function() {
 		videoResize($videoBlock);
 	});
 
-	// ios titles
+	// titles
 
-	//if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-	//	$('h1').addClass('ios-title');
-	//}
-
-	var isMac = navigator.platform.match(/Mac|iPad|iPhone|iPod|Android/i),
-		notPC = navigator.platform.match(/Win/i),
+	var isMac = navigator.platform.match(/Mac/i),
+		notPC = navigator.platform.match(/Mac|Win/i),
 		$invisibleTitle = $('.js-title-invText'),
 		$invisibleTitleHome = $('.js-title-invText-home'),
 		$invisibleText = $('#text'),
 		$deviceImg = $('.js-device-img');
 
-	if (!notPC) {
+	if (isMac) {
 		var test = parseInt($invisibleTitle.css('line-height')),
 			after = ((test / 100) * 19);
 
@@ -45,9 +41,9 @@ $(function() {
 		});
 	}
 
-	/*if (!notPC) {
+	if (!notPC) {
 		$deviceImg.show();
 		$invisibleText.hide();
-	}*/
+	}
 
 });
