@@ -26,8 +26,8 @@ $(function() {
 		$('h1').addClass('ios-title');
 	}
 
-	var isMac = navigator.platform.match(/Mac/i),
-		notPC = navigator.platform.match(/Mac|Win/i),
+	var isMac = navigator.platform.match(/Mac|iPad|iPhone|iPod|Android/i),
+		notPC = navigator.platform.match(/Win/i),
 		$invisibleTitle = $('.js-title-invText'),
 		$invisibleTitleHome = $('.js-title-invText-home'),
 		$invisibleText = $('#text'),
