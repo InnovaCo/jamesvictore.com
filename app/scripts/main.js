@@ -33,7 +33,7 @@ $(function() {
 		$invisibleText = $('#text'),
 		$deviceImg = $('.js-device-img');
 
-	if (isMac) {
+	if (!notPC) {
 		var test = parseInt($invisibleTitle.css('line-height')),
 			after = ((test / 100) * 19);
 
