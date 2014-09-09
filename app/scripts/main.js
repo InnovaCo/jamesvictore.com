@@ -22,9 +22,9 @@ $(function() {
 
 	// ios titles
 
-	//if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-	//	$('h1').addClass('ios-title');
-	//}
+	if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+		$('h1').addClass('ios-title');
+	}
 
 	var isMac = navigator.platform.match(/Mac|iPad|iPhone|iPod|Android/i),
 		notPC = navigator.platform.match(/Win/i),
