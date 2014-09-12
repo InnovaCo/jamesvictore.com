@@ -8,7 +8,7 @@ block header
 
 block content
 	.image_block.image_block--first
-		a.image_block__link(href='javascript:void(0);')
+		.image_block__link
 			.image_block__background.image_block__background--event
 			img.js-device-img.image_block__device.image_block__device-takethisjob(src=page.assets + 'images/d-takethisjob.png')
 			h1.h1.image_block__title.image_block__title--size154#text
@@ -29,10 +29,12 @@ block content
 		aside.block__events
 			h4.h4 Schedule
 			ul
-				li.block__events__item November 13-14, Brazil
-
 				li.block__events__item
-					a.link--underline(href='http://www.eventbrite.com/e/james-victore-take-this-job-and-love-it-tickets-12305454947?aff=es2&rank=0') September 5
+					a.link--underline(href='javascript:void(0);') November 13-14
+					| , Brazil
+
+				li.block__events__item.block__events__item--disabled
+					a.disabled(href='javascript:void(0);') September 5
 					| , London
 
 				li.block__events__item.block__events__item--disabled
@@ -55,8 +57,7 @@ block content
 		.clear
 
 	.image_block
-		a.image_block__link(href='javascript:void(0);')
-			img.image_block__image(src=page.assets + 'images/event2.jpg', alt='Courage', width='1400', height='650')
+		img.image_block__image(src=page.assets + 'images/event2.jpg', alt='Courage', width='1400', height='650')
 		
 	.block
 		.block__paragraph.block__paragraph--wide

@@ -1301,29 +1301,6 @@ p {
 .menu__button--pink:hover {
 	color: #000;
 }
-.menu__button--pink:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding-top: 7px;
-	padding-right: 12px;
-	padding-bottom: 7px;
-	padding-left: 12px;
-	content: 'Life';
-	background-color: #00bea3;
-	background-image: -webkit-linear-gradient(to right, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
-	background-image:      -o-linear-gradient(to right, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
-	background-image: -webkit-linear-gradient(left, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
-	background-image:      -o-linear-gradient(left, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
-	background-image:         linear-gradient(to right, #00bea3 0%, #3cd52e 30%, #fff36e 100%);
-	opacity: 0;
-	-webkit-transition: all .5s;
-	     -o-transition: all .5s;
-	        transition: all .5s;
-}
-.menu__button--pink:hover:before {
-	opacity: 1;
-}
 .contacts {
 	padding-top: 3px;
 	float: right;
