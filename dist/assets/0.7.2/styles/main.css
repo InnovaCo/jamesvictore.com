@@ -414,6 +414,7 @@ p {
 }
 .h2 {
 	margin-bottom: 16px;
+	font-family: HelveticaNeueLTBold, sans-serif;
 	font-size: 54px;
 	font-weight: bold;
 	line-height: 60px;
@@ -725,6 +726,10 @@ p {
 .image_block__title__comment--top10 {
 	margin-top: 10px;
 	margin-bottom: 15px;
+}
+.image_block__title__comment--content {
+	position: inherit;
+	top: 0;
 }
 .image_block__title__text {
 	position: absolute;
