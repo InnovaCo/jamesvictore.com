@@ -23,6 +23,7 @@ $(function() {
 	// titles
 
 	var isMac = navigator.platform.match(/Mac/i),
+		macFF = navigator.userAgent.search(/Firefox/i),
 		notPC = navigator.platform.match(/Mac|Win/i),
 		$invisibleTitle = $('.js-title-invText'),
 		$invisibleTitleHome = $('.js-title-invText-home'),
@@ -44,6 +45,10 @@ $(function() {
 	if (!notPC) {
 		$deviceImg.show();
 		$invisibleText.hide();
+	}
+
+	if (isMac && macFF) {
+		$('.image_block__title--home').addClass('mac-firefox');
 	}
 
 });

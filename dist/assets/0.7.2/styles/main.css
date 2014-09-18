@@ -237,10 +237,11 @@ p {
 .link--dashed {
 	position: relative;
 	display: inline-block;
+	cursor: inherit;
 	text-decoration: none;
 }
 .link--dashed:after {
-	border-bottom: 3px dashed #f128c1;
+	border-bottom: 3px solid #f128c1;
 }
 .link--underline {
 	text-decoration: underline;
@@ -454,6 +455,15 @@ p {
 	width: 100%;
 	height: 50px;
 	border: none;
+}
+input.input-text:-moz-placeholder {
+	color: #bebebe;
+}
+input.input-text::-webkit-input-placeholder {
+	color: #bebebe;
+}
+input.input-text:-ms-input-placeholder {
+	color: #bebebe;
 }
 .italic {
 	font-style: italic;
@@ -675,11 +685,23 @@ p {
 	font-size: 180px;
 	letter-spacing: 2px;
 }
+.image_block__title--home.mac-firefox {
+	letter-spacing: -2px;
+}
 .image_block__title--contact {
 	z-index: 100;
 }
 .image_block__title--contact .image_block__title__text {
 	top: 105px;
+}
+.image_block__title__text-speaking {
+	margin-left: -10px;
+}
+.image_block__title--normalize {
+	right: -25px;
+	left: -25px;
+	padding: 0 25px;
+	width: 1050px;
 }
 .image_block__title--size154 {
 	font-size: 150px;
@@ -994,7 +1016,7 @@ p {
 	background-image:         linear-gradient(transparent, transparent);
 }
 .block__paragraph--subscribe {
-	margin-top: 120px;
+	margin-top: 60px;
 	margin-bottom: 28px;
 }
 .block__paragraph__class-header {
