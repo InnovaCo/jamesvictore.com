@@ -697,6 +697,9 @@ input.input-text:-ms-input-placeholder {
 .image_block__title__text-speaking {
 	margin-left: -10px;
 }
+.image_block__title__text-onlineclass {
+	margin-left: -10px;
+}
 .image_block__title--normalize {
 	right: -25px;
 	left: -25px;
