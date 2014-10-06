@@ -6,10 +6,7 @@ html(lang='ru')
 	include head
 
 	block header
-	body(class=current == 'subscribe' ? 'subscribe' : '')
+	body.victore-page(class=current == 'subscribe' ? 'subscribe' : '')
 		.main
-			include header
 			block content
-			include footer
-
 		include scripts
