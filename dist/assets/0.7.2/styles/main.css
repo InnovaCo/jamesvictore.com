@@ -171,6 +171,7 @@ table {
 body {
 	padding-top: 0;
 	padding-bottom: 0;
+	box-sizing: content-box;
 	font-family: HelveticaNeue, sans-serif;
 	line-height: 1;
 	cursor: default;
