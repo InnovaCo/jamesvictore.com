@@ -778,9 +778,18 @@ input.input-text:-ms-input-placeholder {
 .image_block__title__text--no-margin {
 	margin-left: 0;
 }
+.image_block__title__text--normal_weight {
+	font-weight: normal;
+}
 .image_block__title__text--lab {
-	padding-left: 3px;
-	letter-spacing: -3px;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+.image_block__title__text--lab_letter_y {
+	margin-left: 10px;
+}
+.image_block__title__text--lab_letter_f {
+	margin-left: 5px;
 }
 .image_block__ds-img {
 	position: absolute;
