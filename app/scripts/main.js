@@ -73,13 +73,6 @@ $(function() {
 		} else {
 			firstMailInput.removeClass('input-invalid');
 		}
-
-		if (hasError) {
-			submitBtn.addClass('invalid-form');
-		} else {
-			submitBtn.removeClass('invalid-form');
-		}
-
 	});
 
 });
