@@ -10,7 +10,7 @@ $(function() {
 			videoWidth = e.width();
 		videoHeight = videoWidth / 1.77;
 		e.css({
-			'height':videoHeight
+			'height': videoHeight
 		});
 	}
 
@@ -50,5 +50,36 @@ $(function() {
 	if (isMac && macFF) {
 		$('.image_block__title--home').addClass('mac-firefox');
 	}
+
+
+	var $form = $('form').submit(function() {
+		var firstMailInput = $('.jsFirstName', $form);
+		var emailInput = $('.jsEmail', $form);
+		var submitBtn = $('.jsSubmit', $form);
+
+		var hasError = false;
+
+		if (!emailInput.val().match(/.+@.+\..+/i)) {
+			emailInput.addClass('input-invalid');
+			hasError = true;
+		} else {
+			emailInput.removeClass('input-invalid');
+		}
+
+
+		if (!$.trim(firstMailInput.val())) {
+			firstMailInput.addClass('input-invalid');
+			hasError = true;
+		} else {
+			firstMailInput.removeClass('input-invalid');
+		}
+
+		if (hasError) {
+			submitBtn.addClass('invalid-form');
+		} else {
+			submitBtn.removeClass('invalid-form');
+		}
+
+	});
 
 });

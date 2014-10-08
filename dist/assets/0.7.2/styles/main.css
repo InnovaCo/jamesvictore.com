@@ -457,6 +457,10 @@ p {
 	height: 50px;
 	border: none;
 }
+.input-text.input-invalid {
+	color: #f00;
+	border: 1px #f00 solid;
+}
 input.input-text:-moz-placeholder {
 	color: #bebebe;
 }
