@@ -20,9 +20,16 @@ block content
 					| my 
 					span.italic Take This Job & Love It
 					|  e-book.
-				form(action='javascript:void(0);', method='post')
-					input.input-text.jsFirstName(type='text', placeholder='First Name')
-					input.input-text.jsEmail(type='text', placeholder='Email Address')
+				form(action='javascript:void(0);', method='post' novalidate='novalidate')
+					div.input-item
+						input.input-text.jsEmail(type='email', placeholder='Email Address')
+						span.input-error-message.jsEmailErrorMsg
+							| Please enter email
+					div.input-item
+						input.input-text.jsFirstName(type='text', placeholder='First Name')
+						span.input-error-message.jsFirstNameErrorMsg
+							| Please enter first name
+					
 					button.submit.jsSubmit(type='submit') Subscribe
 			.clear
 

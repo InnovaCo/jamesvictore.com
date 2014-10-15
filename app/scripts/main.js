@@ -53,26 +53,36 @@ $(function() {
 
 
 	var $form = $('form').submit(function() {
-		var firstMailInput = $('.jsFirstName', $form);
-		var emailInput = $('.jsEmail', $form);
-		var submitBtn = $('.jsSubmit', $form);
+		var firstMailInput = $('.jsFirstName', $form),
+			firstNameErrorMsg = $('.jsFirstNameErrorMsg', $form);
 
+		var emailInput = $('.jsEmail', $form),
+			emailErrorMsg = $('.jsEmailErrorMsg', $form);
+
+		var submitBtn = $('.jsSubmit', $form);
 		var hasError = false;
 
 		if (!emailInput.val().match(/.+@.+\..+/i)) {
 			emailInput.addClass('input-invalid');
+			emailErrorMsg.show();
 			hasError = true;
 		} else {
 			emailInput.removeClass('input-invalid');
+			emailErrorMsg.hide();
 		}
 
 
 		if (!$.trim(firstMailInput.val())) {
 			firstMailInput.addClass('input-invalid');
+			firstNameErrorMsg.show();
 			hasError = true;
 		} else {
 			firstMailInput.removeClass('input-invalid');
+			firstNameErrorMsg.hide();
 		}
+
+		return !hasError;
+
 	});
 
 });
